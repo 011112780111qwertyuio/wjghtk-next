@@ -35,7 +35,7 @@ function DitelsOpenCardTour({ data, local }) {
           <div className="left">
             <ul className="le">
               {data.state === "ok" ? JSON.parse(data.data.Includes).map((item, index) => (
-                <li key={index}><FontAwesomeIcon icon={faCheck} />{item.title}</li>
+                <li key={index}><FontAwesomeIcon icon={faCheck} /> {item.title}</li>
               ))
                 :
                 <>
@@ -55,7 +55,7 @@ function DitelsOpenCardTour({ data, local }) {
             <ul className="ri">
               {data.state === "ok" ?
                 JSON.parse(data.data.Exclude).map((item, index) => (
-                  <li key={index}><FontAwesomeIcon icon={faXmark} />{item}</li>
+                  <li key={index}><FontAwesomeIcon icon={faXmark} /> {item}</li>
                 ))
                 :
                 <>
