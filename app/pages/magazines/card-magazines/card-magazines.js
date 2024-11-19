@@ -9,6 +9,8 @@ const Card = async ({ data, local }) => {
     "مايو", "يونيو", "يوليو", "أغسطس",
     "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"
   ];
+
+
   const countComment = async (id) => {
     let count = 0;
     const url_2 = local + "/" + process.env.API_COUNTCOMMENTTOPIC;
@@ -24,7 +26,7 @@ const Card = async ({ data, local }) => {
 
   return (
     <div dir='rtl' className="card-magazines">
-      <Link href={`/pages/wjhtk/magazines/wjhtk/${data?.title_Topics}/${data?.ID_Topics}`}>
+      <Link href={`/pages/wjhtk?title?=&${data?.title_Topics}&uid=${data?.ID_Topics}`}>
         <div className="view-card">
           <img src={local + "/" + process.env.API_PATHIMAGES + "/" + data?.avatar_Prim} alt="" />
           <div className="title-top">
@@ -48,13 +50,13 @@ const Card = async ({ data, local }) => {
           </div>
         </div>
         <p className="title">
-          <Link className='title' href={`/pages/wjhtk/magazines/wjhtk/${data?.title_Topics}/${data?.ID_Topics}`} >{data?.title_Topics?.slice(0, 70)}</Link>
+          <Link className='title' href={`/pages/wjhtk?title?=&${data?.title_Topics}&uid=${data?.ID_Topics}`}>{data?.title_Topics?.slice(0, 70)}</Link>
         </p>
         <p className="sub-content">{
           data?.content_Topics?.slice(0, 200)
         } ...</p>
         <div className="flex-get">
-          <p><Link href={`/pages/wjhtk/magazines/wjhtk/${data?.title_Topics}/${data?.ID_Topics}`} >اقرأ المزيد</Link></p>
+          <p><Link href={`/pages/wjhtk?title?=&${data?.title_Topics}&uid=${data?.ID_Topics}`} >اقرأ المزيد</Link></p>
           <span><FontAwesomeIcon icon={faArrowLeft} /></span>
         </div>
       </div>
