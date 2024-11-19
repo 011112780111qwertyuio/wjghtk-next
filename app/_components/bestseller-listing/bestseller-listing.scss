@@ -1,0 +1,191 @@
+@import '../../_styles/options/variables.scss';
+
+.bestseller-listing {
+  margin-top: 35px;
+
+  .title {
+    color: $colorBlack;
+    font-weight: bold;
+    font-size: $sizeLargText;
+
+  }
+
+  .title-sub {
+    color: $colorSubBlack;
+    font-size: $sizeMainText;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  .flex-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .mycard {
+      width: 32%;
+      background-color: $colorWhite;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      margin-bottom: 30px;
+
+      .view {
+        width: 100%;
+        height: 260px;
+        overflow: hidden;
+        position: relative;
+
+        img {
+          height: 100% !important;
+          width:  100% !important;   
+        }
+
+        &:hover {
+          cursor: pointer;
+
+          img {
+            transform: scale(1.1);
+            transition: all 0.3s ease-in-out;
+          }
+        }
+
+
+
+        span {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          color: $colorSubBlack;
+          font-size: $sizeIconsSmall;
+          color: $colorWhite;
+
+          &:hover {
+            color: $colorPrimary;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+          }
+        }
+
+        .flex-icons {
+          position: absolute;
+          bottom: 20px;
+          left: 20px;
+          display: flex;
+          color: $colorPrimary;
+          font-size: $sizeIconsSmall;
+
+          svg {
+            margin-right: 4px;
+          }
+        }
+
+
+      }
+
+      .flex-content {
+        padding-top: 30px;
+        padding-bottom: 25px;
+        padding-left: 13px;
+        padding-right: 13px;
+
+        .tile-content {
+          color: $colorBlack;
+          font-size: $sizeMainText;
+          font-weight: bold;
+
+        }
+
+        .row {
+          display: flex;
+          padding-top: 10px;
+
+          span {
+            color: $colorPrimary;
+            font-size: $sizeMainText;
+          }
+
+          label {
+            font-size: $sizeSmallText;
+            color: $colorSubBlack;
+            margin-left: 15px;
+            margin-right: 15px;
+          }
+
+          p {
+            color: $colorSubBlack;
+            font-size: $sizeMainText;
+          }
+
+          .number {
+            word-break: break-all;
+
+          }
+        }
+
+        .flex-salre {
+          padding-top: 8px;
+          display: flex;
+
+          span {
+            color: $colorSubBlack;
+            font-size: $sizeMainText;
+          }
+
+          p {
+            color: $colorBlack;
+            font-weight: bold;
+            font-size: $sizeMainText;
+            margin-left: 5px;
+            margin-right: 5px;
+            word-break: break-all;
+          }
+        }
+      }
+
+    }
+  }
+
+}
+
+@media (min-width:47px) and (max-width:346px) {
+
+  .bestseller-listing {
+    .flex-cards {
+      zoom: 0.8;
+
+      .mycard {
+        width: 100%;
+      }
+    }
+
+  }
+
+
+}
+
+@media (min-width:347px) and (max-width:681px) {
+
+  .bestseller-listing {
+    .flex-cards {
+      .mycard {
+        width: 100%;
+      }
+    }
+
+  }
+
+
+}
+
+@media (min-width:682px) and (max-width:930px) {
+
+  .bestseller-listing {
+    .flex-cards {
+      .mycard {
+        width: 48%;
+      }
+    }
+
+  }
+
+
+}

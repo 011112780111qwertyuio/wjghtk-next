@@ -1,0 +1,412 @@
+@import '../../_styles/options/variables.scss';
+
+
+.boking-form {
+  z-index: 1000;
+  position: relative;
+
+  input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    display: inline;
+  }
+
+
+
+
+
+
+  .details {
+    &>span {
+      width: 100%;
+      height: 13px;
+      display: block;
+      background: #d9d9d9;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+
+      .name {
+        height: 15px;
+        width: 100px;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(to right, #d9d9d9 0%, rgba(0, 0, 0, 0.07) 20%, #d9d9d9 40%, #d9d9d9 100%);
+        background-repeat: no-repeat;
+        background-size: 450px 400px;
+        animation: shimmer 1s linear infinite;
+      }
+
+      &::before {
+        animation-delay: 0.2s;
+      }
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .mycard-sumation {
+    background-color: #f2f4f3;
+    width: 100%;
+    min-width: 100%;
+    padding-top: 50px;
+    padding-bottom: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 10px;
+
+    .check-found {
+      color: $colorPrimary;
+      font-size: $sizeSmallText;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+
+    .title {
+      font-size: $sizeLargText;
+      font-weight: bold;
+      border-right: 2px solid $colorPrimary;
+      padding-right: 10px;
+      margin-bottom: 15px;
+    }
+
+    .flex-date {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid rgb(149, 145, 145);
+      border-bottom: 1px solid rgb(149, 145, 145);
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      label {
+        color: $colorBlack;
+        font-size: $sizeMainText;
+
+      }
+
+
+    }
+
+    .flex-dt-time {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid rgb(149, 145, 145);
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      label {
+        color: $colorBlack;
+        font-size: $sizeMainText;
+      }
+
+      .flex-radio {
+        display: flex;
+
+        div {
+          margin-right: 15px;
+
+          label {
+            color: $colorBlack;
+            font-size: $sizeSmallText;
+            padding-right: 5px;
+
+          }
+
+          input[type="radio"] {
+            width: 15px;
+            height: 15px;
+
+          }
+
+        }
+
+      }
+    }
+
+
+    .between {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 15px;
+
+      .title-select {
+        color: $colorBlack;
+        font-size: $sizeMainText;
+      }
+
+      .loading-select {
+        color: $colorSubBlack;
+        font-size: $sizeSmallText;
+
+      }
+    }
+
+
+
+
+    .flex-children {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+
+      p {
+        color: $colorSubBlack;
+        font-size: $sizeMainText;
+      }
+
+      .myselect {
+
+        width: 90px;
+        min-width: 90px;
+        height: 38px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: white;
+        border: 2px solid rgb(208, 206, 206);
+        outline: none;
+        border-radius: 5px;
+        margin-right: 7px;
+        font-size: $sizeMainText;
+
+      }
+
+    }
+
+    .spce-between {
+      position: relative;
+      padding-top: 12px;
+      padding-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+
+      &::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 75%;
+        background-color: rgb(149, 145, 145);
+        left: 0;
+        bottom: 0px
+      }
+
+      p {
+        color: $colorBlack;
+        font-size: $sizeMainText;
+        margin-right: 10px;
+
+      }
+
+      div {
+        input[type="checkbox"] {
+          color: red;
+        }
+
+        label {
+          color: black;
+          margin-right: 5px;
+          font-size: $sizeMainText;
+        }
+      }
+
+
+    }
+
+    .spce-between-column {
+      padding-top: 12px;
+      padding-bottom: 10px;
+
+      .mytl {
+        color: $colorBlack;
+        font-weight: bold;
+        font-size: $sizeMainText;
+        margin-bottom: 10px;
+
+      }
+
+      .child {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+        padding-top: 10px;
+
+        p {
+          color: $colorBlack;
+          padding-right: 15px;
+          font-size: $sizeSmallText;
+        }
+
+        &>label {
+
+          font-size: $sizeMainText;
+          color: $colorBlack;
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          input {
+            margin-left: 7px;
+            display: inline-block;
+          }
+          
+
+        }
+
+      }
+
+    }
+
+    .button {
+      border-top: 1px solid rgb(149, 145, 145);
+      padding-top: 15px;
+      width: 100%;
+
+      .title-flex {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        label {
+          font-size: $sizeMainText;
+          color: $colorSubBlack;
+          font-weight: bold;
+        }
+
+        p {
+          font-size: $sizeMainText;
+          color: $colorPrimary;
+
+        }
+      }
+
+      .btn-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        text-decoration: none;
+
+        &:hover {
+          cursor: pointer;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          transition: all 0.3s ease-in-out;
+
+        }
+
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 60px;
+          background-color: $colorPrimary;
+          border-radius: 10px;
+          font-weight: bold;
+          color: $colorWhite;
+          font-size: $sizeMainText;
+
+          p {
+            margin-right: 10px;
+          }
+
+          span {
+            font-size: $sizeIconsSmall;
+          }
+        }
+
+      }
+    }
+
+
+  }
+
+  .mycard-information {
+    margin-top: 30px;
+    border: 1px solid rgb(232, 230, 230);
+    border-radius: 15px;
+    padding: 30px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+
+    .title {
+      color: $colorBlack;
+      font-size: $sizeLargText;
+      font-weight: bold;
+
+    }
+
+    .flex-information {
+      display: flex;
+      align-items: center;
+      margin-top: 25px;
+      margin-bottom: 20px;
+
+      span {
+        color: $colorPrimary;
+        font-size: $sizeIconsMain;
+        margin-left: 15px;
+      }
+
+      div {
+        p {
+          color: $colorSubBlack;
+          font-size: $sizeMainText;
+          margin-bottom: 5px;
+
+        }
+
+        label {
+          color: $colorBlack;
+          font-size: $sizeMainText;
+          font-weight: bold;
+
+        }
+
+
+      }
+    }
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -450px 0;
+  }
+
+  100% {
+    background-position: 450px 0;
+  }
+}
+
+
+@media(min-width:3px) and (max-width:325px) {
+  .boking-form {
+    zoom: 0.8;
+  }
+}
+
+@media(min-width:326px) and (max-width:358px) {
+  .boking-form {
+    zoom: 0.9;
+  }
+}

@@ -1,0 +1,254 @@
+@import '@/app/_styles/options/variables.scss';
+
+/* class  */
+.close-pop {
+  height: 50px;
+}
+
+.out-pop {
+  min-height: 50px;
+
+}
+
+.rotate {
+  transform: rotate(-0.25turn);
+}
+
+/* stop class */
+
+.modal-nav-home {
+  .flag {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin-left: 10px;
+    }
+
+  }
+
+  .pop {
+    background-color: $colorModalBlack;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 2000;
+  }
+
+  .absolute {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 300px;
+    background-color: $colorWhite;
+    overflow-y: auto;
+    scrollbar-color: $colorBlack;
+    scrollbar-width: thin;
+    z-index: 2000;
+
+    .close {
+      background-color: $colorPrimary;
+      padding: 10px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      display: flex;
+      justify-content: flex-end;
+
+      svg {
+        color: $colorWhite;
+        font-size: $sizeIconsMain;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+      }
+
+
+    }
+
+    .buttons {
+
+      .list-tile-top,
+      .butn-auth-mobile {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        div:hover {
+          cursor: pointer;
+        }
+
+        a,
+        div {
+          color: $colorBlack;
+          font-size: $sizeSmallText;
+          padding-right: 15px;
+          text-decoration: none;
+          text-transform: capitalize;
+          font-weight: bold;
+
+          span {
+            svg {
+              font-size: $sizeIconsSmall;
+            }
+          }
+        }
+
+        border-bottom: 1px solid rgb(168, 168, 168);
+      }
+
+      .butn-auth-mobile {
+
+        a,
+        div {
+          display: flex;
+
+          span {
+            margin-left: 7px;
+            color: $colorSubBlack;
+          }
+
+          margin-bottom:20px;
+
+          &:last-child {
+            margin-bottom: 0px;
+          }
+        }
+      }
+
+
+      .list-tile {
+
+        border-bottom: 1px solid rgb(168, 168, 168);
+        padding: 15px;
+        overflow: hidden;
+
+        .title {
+          display: flex;
+          justify-content: space-between;
+
+          a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $colorBlack;
+
+            svg {
+              font-size: $sizeIconsSmall;
+              color: $colorBlack;
+            }
+
+
+
+          }
+        }
+
+        .pop-menue {
+          padding-right: 20px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+
+          a {
+            text-decoration: none;
+
+            svg {
+              font-size: $sizeIconsSmall;
+              color: $colorBlack;
+              padding-top: 5px;
+              margin-left: 10px;
+            }
+
+            font-size: $sizeMainText;
+            color: $colorBlack;
+            text-transform: capitalize;
+
+          }
+        }
+
+
+      }
+
+      .list-tiel-btn {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid rgb(168, 168, 168);
+        overflow: hidden;
+
+        .list {
+
+          .flex {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 10px;
+            padding-bottom: 15px;
+
+            p {
+              color: $colorBlack;
+              font-size: $sizeMainText;
+              text-transform: capitalize;
+
+            }
+
+            svg {
+              color: $colorBlack;
+              font-size: $sizeIconsSmall;
+
+            }
+          }
+
+          .pop-menue {
+            padding-bottom: 15px;
+            padding-right: 10px;
+            padding-top: 15px;
+
+            p {
+              color: $colorBlack;
+              font-size: $sizeMainText
+            }
+
+            &:hover {
+              border-bottom: 1px solid black;
+              transition: 0.3s all;
+            }
+          }
+
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+
+    }
+
+
+  }
+}
+
+
+
+@media (min-width:0px) and (max-width:347px) {
+  .modal-nav-home {
+    zoom: 0.9;
+
+    .absolute {
+
+      width: 250px
+    }
+  }
+}
+
+@media (min-width:348px) and (max-width:400px) {
+  .modal-nav-home {
+    .absolute {
+      width: 260px
+    }
+  }
+}

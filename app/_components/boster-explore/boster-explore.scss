@@ -1,0 +1,110 @@
+@import '../../_styles/options/variables.scss';
+
+.boster-explore {
+  background-color: $colorPrimary;
+  border-radius: 20px;
+
+  .boster {
+
+    .left {
+      padding-left: 15px;
+      padding-right: 15px;
+      background-color: $colorPrimary;
+
+      padding-top: 50px;
+      padding-bottom: 50px;
+      display: flex;
+      justify-content: space-between;
+
+      .mycard {
+        display: flex;
+        align-items: center;
+        width: 80%;
+
+        .img {
+
+          color: $colorWhite;
+          font-size: $sizeIconsLarg;
+
+
+        }
+
+        .content {
+          .sun-tile {
+            color: rgb(209, 206, 206);
+            font-size: $sizeMainText;
+            font-weight: bold;
+          }
+
+          .title {
+            color: $colorWhite;
+            font-weight: bold;
+            font-size: $sizeLargText;
+            margin-top: 5px;
+          }
+        }
+
+
+      }
+
+      .right-btn {
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        p {
+          color: $colorBlack;
+          font-size: $sizeMainText;
+          background-color: white;
+          width: 155px;
+          height: 50px;
+          border-radius: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &:hover {
+            background-color: rgb(213, 209, 209);
+            transition: all 0.3s ease-in;
+            cursor: pointer;
+
+          }
+        }
+      }
+    }
+
+
+
+
+  }
+}
+
+@media (max-width:646px) {
+
+  .boster-explore {
+    zoom: 0.9;
+
+    .boster {
+
+      .left {
+        flex-direction: column;
+
+        .right-btn {
+          padding-top: 20px;
+          width: 100%;
+          justify-content: flex-start;
+        }
+      }
+    }
+
+
+  }
+
+}
+
+@media (min-width:3px) and (max-width:478px) {
+  .boster-explore {
+    zoom: 0.7;
+  }
+}

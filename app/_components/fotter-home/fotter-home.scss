@@ -1,0 +1,143 @@
+@import '../../_styles/options/variables.scss';
+
+.fotter-home {
+  padding-top: 50px;
+  background-color: white;
+
+  .flex-cards {
+    display: flex;
+    flex-wrap: wrap;
+
+    &>div {
+      margin-bottom: 20px;
+    }
+
+    .section-1 {
+      width: 25%;
+
+      .title-section {
+        color: $colorBlack;
+        font-size: $sizeMainText;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgb(190, 183, 183);
+        margin-bottom: 30px;
+        width: 50%;
+      }
+
+      .list-tile {
+        border-right: 3px solid $colorPrimary;
+        margin-bottom: 40px;
+        padding-right: 20px;
+
+        .sub-tile {
+          color: $colorSubBlack;
+          font-size: $sizeSmallText;
+          margin-bottom: 15px;
+        }
+
+        .title {
+          color: $colorBlack;
+          font-size: $sizeMainText;
+          font-weight: bold;
+          letter-spacing: 1px;
+        }
+
+        span {
+          color: $colorBlack;
+          font-size: $sizeIconsSmall;
+          margin-left: 30px;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+      }
+    }
+
+    .section-const {
+      width: 25%;
+
+      .title-section {
+        color: $colorBlack;
+        font-size: $sizeMainText;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgb(190, 183, 183);
+        margin-bottom: 30px;
+        width: 50%;
+      }
+
+      .list-tile {
+        padding-bottom: 30px;
+
+        a {
+          color: $colorBlack;
+          text-decoration: none;
+          font-size: $sizeSmallText;
+
+          &:hover {
+            color: $colorPrimary;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+
+
+
+
+@media (min-width:50px) and (max-width:549px) {
+
+  .fotter-home {
+
+    .flex-cards {
+      .section-const {
+        width: 100%;
+      }
+
+      .section-1 {
+        width: 100%;
+      }
+
+    }
+
+
+  }
+}
+
+
+@media (min-width:550px) and (max-width:968px) {
+
+  .fotter-home {
+
+    .flex-cards {
+      .section-const {
+        width: 50%;
+      }
+
+      .section-1 {
+        width: 50%;
+      }
+
+    }
+
+
+  }
+}
+
+
+@media (min-width:969px) and (max-width:1114px) {
+
+  .fotter-home {
+
+    .flex-cards {
+      zoom: 0.9;
+    }
+
+
+  }
+}

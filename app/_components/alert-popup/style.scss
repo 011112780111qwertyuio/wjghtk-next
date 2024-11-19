@@ -1,0 +1,64 @@
+@import '../../_styles/options/variables.scss';
+
+.alert-popup {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.742);
+  z-index: 3000 !important;
+
+  .padding-alert {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .box {
+      background-color: #f3f3f3;
+      padding: 30px;
+
+
+      width: 550px;
+      max-width: 100%;
+
+      .my-tile {
+        color: $colorBlack;
+        font-size: $sizeLargText;
+        font-weight: bold;
+        padding-bottom: 15px;
+      }
+
+      .myditls {
+        color: $colorBlack;
+        font-size: $sizeMainText;
+        line-height: 24px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+
+      }
+
+      .btn {
+        color: $colorPrimary;
+        font-weight: bold;
+        font-size: $sizeMainText;
+        padding-top: 15px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:600px) {
+  .alert-popup {
+    .my-tile {
+      font-size: $sizeMainText !important;
+    }
+  }
+}

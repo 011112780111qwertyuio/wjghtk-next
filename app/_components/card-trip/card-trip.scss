@@ -1,0 +1,341 @@
+@import '../../_styles/options/variables.scss';
+
+.card-trip {
+  a {
+    text-decoration: none;
+  }
+
+  width: 31%;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 270px;
+  text-decoration: none;
+
+  .myimg {
+    position: relative;
+    min-height: 300px;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      z-index: -1;
+    }
+
+    .flex {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+
+      &>div {
+        p {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $colorWhite;
+          background-color: $colorBule;
+          padding-left: 15px;
+          padding-right: 15px;
+          height: 30px;
+          border-radius: 5px;
+          font-size: $sizeSmallText;
+          margin-bottom: 10px;
+          width: fit-content;
+        }
+
+        .off {
+          background-color: orange;
+        }
+      }
+
+      span {
+        background-color: rgba(0, 0, 0, 0.46);
+        padding: 10px;
+        border-radius: 10px;
+        color: $colorWhite;
+        font-size: $sizeIconsSmall;
+        height: 36px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+
+
+  }
+
+  .content {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    position: absolute;
+    bottom: -220px;
+    width: 100%;
+    background-color: $colorWhite;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    .flex-top {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+
+      .left {
+        padding-top: 40px;
+
+
+      }
+
+      .right {
+        display: flex;
+        width: 100px;
+        background-color: $colorWhite;
+        border-radius: 10px;
+        height: 38px;
+        position: absolute;
+        left: 10px;
+        top: -20px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .my-icon-tip,
+        .camira {
+          color: $colorSubBlack;
+          font-size: $sizeIconsSmall;
+          text-align: center;
+          padding-left: 15px;
+          padding-right: 15px;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+        }
+
+
+      }
+    }
+
+    .secnd-title {
+      padding-top: 20px;
+
+      &>p {
+        color: $colorBlack;
+        font-size: $sizeMainText;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+
+      .flex-location {
+        display: flex;
+        margin-bottom: 15px;
+
+        span {
+          color: $colorPrimary;
+          margin-left: 10px;
+
+        }
+
+        p {
+          color: $colorSubBlack;
+          font-size: $sizeSmallText;
+
+        }
+      }
+
+      .flex-from {
+        display: flex;
+        margin-top: 15px;
+
+        span {
+          color: $colorPrimary;
+          font-size: $sizeIconsSmall;
+          margin-left: 5px;
+        }
+
+        p {
+          color: $colorSubBlack;
+          margin-left: 5px;
+
+        }
+
+        label {
+          color: orange;
+          font-weight: bold;
+          font-size: $sizeSmallText;
+        }
+
+        .of {
+          color: $colorSubBlack;
+          font-size: $sizeSmallText;
+          margin-right: 3px;
+          text-decoration: line-through;
+          font-weight: 300;
+        }
+      }
+
+      .flex-fotter {
+        margin-top: 30px;
+        height: 60px;
+        border-top: 1px solid rgb(206, 203, 203);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .left {
+          display: flex;
+
+          span {
+            color: $colorPrimary;
+            font-size: $sizeIconsSmall;
+            margin-left: 5px;
+          }
+
+          p {
+            color: $colorSubBlack;
+            font-size: $sizeSmallText;
+            margin-left: 10px;
+          }
+
+          label {
+            color: $colorSubBlack;
+
+          }
+        }
+
+        .right {
+          display: flex;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          p {
+            color: $colorSubBlack;
+            font-size: $sizeSmallText;
+            font-weight: bold;
+            margin-left: 15px;
+
+          }
+
+          span {
+            color: $colorSubBlack;
+            font-size: $sizeIconsSmall;
+          }
+        }
+
+
+
+      }
+
+
+
+    }
+
+
+
+
+  }
+
+
+
+
+}
+
+@media (min-width:51px) and (max-width:367px) {
+  .card-trip {
+    width: 100%;
+
+    .myimg {
+      height: 250px;
+
+    }
+
+  }
+
+}
+
+@media (min-width:368px) and (max-width:456px) {
+  .card-trip {
+    width: 100%;
+
+    .myimg {
+      height: 290px;
+
+    }
+
+  }
+
+}
+
+@media (min-width:457px) and (max-width:623px) {
+  .card-trip {
+    width: 100%;
+
+    .myimg {
+      height: 340px;
+
+    }
+
+  }
+
+}
+
+@media (min-width:624px) and (max-width:837px) {
+  .card-trip {
+    zoom: 0.9;
+    width: 48%;
+
+    .myimg {
+      height: 300px;
+
+    }
+
+  }
+
+}
+
+@media (min-width:732px) and (max-width:838px) {
+  .card-trip {
+
+    width: 48%;
+
+    .myimg {
+      height: 300px;
+
+    }
+
+  }
+
+}
+
+@media (min-width:839px) and (max-width:1075px) {
+
+  .card-trip {
+
+    width: 48%;
+
+    .myimg {
+      height: 350px;
+
+    }
+
+  }
+
+}
