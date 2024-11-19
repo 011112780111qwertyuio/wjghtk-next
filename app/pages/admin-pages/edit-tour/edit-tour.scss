@@ -1,0 +1,355 @@
+@import '../../../_styles/options/variables.scss';
+
+.edit-tour {
+
+  /* class  */
+  .btn-save {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-end;
+
+    p {
+      margin-top: 20px;
+      border-radius: 5px;
+      width: fit-content;
+      padding: 10px;
+      padding-left: 15px;
+      padding-right: 15px;
+      color: $colorWhite;
+      font-size: $sizeMainText;
+      background-color: #28a745;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+  }
+
+  .btn-add {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    margin-top: 20px;
+
+    p {
+      background-color: #17a2b8;
+      width: 40px;
+      margin-left: 10px;
+      width: fit-content;
+      padding: 10px;
+      padding-left: 15px;
+      padding-right: 15px;
+      color: $colorWhite;
+      font-size: $sizeMainText;
+      border-radius: 5px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+    }
+
+
+  }
+
+  .btn-delete {
+
+    background-color: $colorPrimary;
+    width: fit-content;
+    padding: 9px;
+    margin-top: 15px;
+    font-size: $sizeIconsSmall;
+    color: $colorWhite;
+    border-radius: 5px;
+
+    &:hover {
+      cursor: pointer;
+
+    }
+
+  }
+
+  .create-box-add {
+    .my-img-vip {
+      width: 100%;
+      height: 200px;
+    }
+
+    textarea {
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+      border: 1px solid rgb(192, 188, 188);
+      outline: none;
+      padding: 10px;
+      font-size: $sizeMainText;
+    }
+
+    .box-tile {
+      border: 1px solid rgb(192, 188, 188);
+      padding: 10px;
+      margin-top: 9px;
+      font-size: $sizeMainText;
+      font-weight: bold;
+    }
+
+    .box-tile-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid rgb(192, 188, 188);
+      padding: 10px;
+      margin-top: 9px;
+      font-size: $sizeMainText;
+      font-weight: bold;
+    }
+
+    .create-box {
+      border: 1px solid rgb(175, 173, 173);
+      border-top: none;
+      padding: 10px;
+
+      .lang {
+        background-color: rgb(208, 206, 206);
+        width: 80px;
+        padding: 5px;
+        text-align: center;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+    }
+
+  }
+
+  .my-tile {
+    width: 100%;
+    padding-bottom: 6px;
+    color: $colorBlack;
+    font-weight: bold;
+    font-size: $sizeMainText;
+    border-bottom: 1px solid rgb(175, 172, 172);
+    margin-bottom: 20px;
+  }
+
+  .child-style {
+    background-color: $colorWhite;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin-bottom: 20px;
+
+    input[type="checkbox"] {
+      width: 15px;
+      height: 15px;
+      margin-right: 5px;
+    }
+
+    .padding-content {
+      background-color: #f4f6f8;
+      padding: 13px;
+      border-radius: 5px;
+    }
+
+    .size-image {
+      width: 200px;
+      height: 200px;
+      max-width: 100%;
+      padding-top: 10px;
+    }
+  }
+
+  .size-images {
+    width: 300px;
+    height: 200px;
+    margin-top: 15px;
+    max-width: 100%;
+  }
+
+  /* ------ */
+  input[type="text"],
+  input[type="number"],
+  select {
+    width: 100%;
+    border: 1px solid rgb(213, 210, 210);
+    padding: 10px;
+    outline: none;
+    margin-top: 10px;
+    font-size: $sizeMainText;
+  }
+
+  label {
+    font-size: $sizeMainText;
+    color: $colorSubBlack;
+
+  }
+
+  .fit-content {
+    width: 100% !important;
+  }
+
+  .navpar-top {
+
+    z-index: 999;
+    position: fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+  }
+
+  .flex-page {
+    display: flex;
+    justify-content: space-between;
+
+    .left-nav {
+      width: 280px;
+      max-width: 100%;
+
+      .fixed-left {
+        width: 280px;
+        max-width: 100%;
+        position: fixed;
+        lefT: 0px;
+        top: 65px;
+        bottom: 0px;
+        overflow-y: auto;
+      }
+    }
+
+    .right-page {
+      width: 80%;
+
+      .padding {
+        .betwen {
+          display: flex;
+          justify-content: space-between;
+          padding-left: 35px;
+          padding-right: 35px;
+          padding-top: 20px;
+          align-items: center;
+          font-size: $sizeMainText;
+
+          div {
+            p {
+              font-weight: bold;
+              font-size: $sizeLargText;
+              margin-bottom: 5px;
+            }
+
+            span {
+              margin-right: 5px;
+            }
+          }
+
+          .btn {
+            background-color: #007bff;
+            width: fit-content;
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 5px;
+
+            a {
+              color: white;
+              text-decoration: none;
+            }
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+
+        .from-content {
+          padding-left: 40px;
+          padding-right: 40px;
+          padding-top: 20px;
+          display: flex;
+          justify-content: space-between;
+
+          .left-conten-bar {
+            height: fit-content;
+            background-color: $colorWhite;
+            width: 18%;
+            background-color: $colorWhite;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+            &>p {
+              padding-left: 20px;
+              padding-top: 15px;
+              padding-bottom: 15px;
+              padding-right: 20px;
+              background-color: #f7f7f7;
+              color: $colorBlack;
+              font-size: $sizeMainText;
+
+              span {
+                padding-right: 10px;
+                font-size: $sizeIconsSmall;
+                color: $colorBlack;
+
+
+              }
+
+            }
+
+            .active-left {
+              background-color: #007bff;
+              color: white;
+            }
+
+            div {
+              font-size: $sizeMainText;
+              padding-left: 20px;
+              padding-top: 15px;
+              padding-bottom: 15px;
+              padding-right: 20px;
+              color: $colorSubBlack;
+              border-bottom: 1px solid rgb(215, 212, 212);
+
+              &:hover {
+                cursor: pointer;
+              }
+
+              &:last-child {
+                border: none;
+              }
+            }
+
+
+
+
+
+          }
+
+          .right-content-bar {
+            width: 79%;
+            position: relative;
+
+
+
+            .from-general {
+
+
+              .child-2 {
+                margin-top: 30px;
+
+              }
+
+
+            }
+
+            .from-gps {
+              background-color: white;
+              background-color: $colorWhite;
+              padding: 20px;
+              box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+}

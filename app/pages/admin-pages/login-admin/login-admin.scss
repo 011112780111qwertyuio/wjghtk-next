@@ -1,0 +1,94 @@
+@import '../../../_styles/options/variables.scss';
+
+.login-admin {
+
+  .form {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 500px;
+    max-width: 100%;
+    padding: 20px;
+
+    .content-form {
+      .logo {
+        display: flex;
+        justify-content: center;
+
+      }
+
+      .myform {
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        background-color: white;
+        padding: 20px;
+        margin-top: 25px;
+
+
+        .title {
+          display: block;
+          text-align: center;
+          font-weight: bold;
+          font-size: $sizeMainText;
+          margin-bottom: 20px;
+        }
+
+        width:100%;
+
+        input {
+          width: 100%;
+          outline: none;
+          padding: 13px;
+          font-size: $sizeMainText;
+          border: 1px solid rgb(210, 206, 206);
+          text-align: right;
+          margin-bottom: 10px;
+          border-radius: 5px;
+
+        }
+
+        .btn-in {
+          width: 100%;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          color: $colorWhite;
+          text-transform: capitalize;
+          border: none;
+          outline: none;
+          background-color: $colorPrimary;
+          border-radius: 5px;
+          font-size: $sizeMainText;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+        }
+
+        .or {
+          width: 100%;
+          height: 1px;
+          background-color: rgb(197, 194, 194);
+          margin-top: 30px;
+          position: relative;
+
+          p {
+            color: $colorBlack;
+            font-size: $sizeMainText;
+            position: absolute;
+            left: 50%;
+            top: -12px;
+            transform: translate(-50%);
+            background-color: white;
+            width: 45px;
+            text-align: center;
+
+          }
+        }
+
+
+      }
+    }
+  }
+
+}

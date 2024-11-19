@@ -1,0 +1,84 @@
+@import '../../../_styles/options/variables.scss';
+
+.hotel {
+  width: 100%;
+
+  .nav-top {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+  }
+
+  .flex-hotel {
+    display: flex;
+    justify-content: space-between;
+
+    .left-nav {
+      width: 280px;
+      min-width: 280px;
+      max-width: 100%;
+
+      &>div {
+        width: 280px;
+        min-width: 280px;
+        max-width: 100%;
+        position: fixed;
+        top: 65px;
+        bottom: 0px;
+        overflow-y: auto;
+        z-index: 999;
+      }
+    }
+
+    .right-nav {
+      width: 100%;
+      padding-top: 65px;
+
+      .content-from {
+        width: 100%;
+        padding: 40px;
+
+
+
+        .right-tile {
+          color: $colorSubBlack;
+          font-weight: bold;
+          font-size: $sizeMainText;
+          margin-top: 30px;
+          text-align: right;
+          font-style: italic;
+          margin-right: 10px;
+        }
+
+
+
+      }
+    }
+  }
+}
+
+
+
+@media(min-width:396px) and (max-width:500px) {
+  .hotel {
+    .flex-hotel {
+      zoom: 0.8;
+    }
+  }
+}
+
+@media (min-width:3px) and (max-width:1132px) {
+  .hotel {
+    .flex-hotel {
+      .right-nav {
+        .content-from {
+          padding-left: 20px;
+          padding-right: 20px;
+
+
+        }
+      }
+    }
+  }
+}

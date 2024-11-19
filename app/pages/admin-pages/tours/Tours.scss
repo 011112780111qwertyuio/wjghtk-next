@@ -1,0 +1,44 @@
+@import '../../../_styles/options/variables.scss';
+
+.tours {
+  .navpar {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+  }
+
+  .flex-betwen {
+    display: flex;
+    justify-content: space-between;
+
+    .nav-left {
+
+      width: 280px;
+      min-width: 280px;
+      max-width: 100%;
+
+      &>div {
+        width: 280px;
+        min-width: 280px;
+        max-width: 100%;
+        position: fixed;
+        left: 0px;
+        top: 65px;
+        bottom: 0px;
+        overflow-y: auto;
+      }
+
+    }
+
+    .right-content {
+      width: 100%;
+      padding-top: 65px;
+
+      .padding {
+        padding-left: 45px;
+        padding-right: 40px;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,29 @@
+@import '../../../_styles/options/variables.scss';
+
+.flight {
+
+  .nav-top {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+  }
+
+  .flex-flight {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+
+    .nav-left-flight {
+      .fixed {
+        border: 3px solid red;
+        position: fixed;
+        width: 300px;
+        top: 0px;
+        bottom: 0px;
+      }
+    }
+  }
+}

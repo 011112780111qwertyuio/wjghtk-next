@@ -1,0 +1,168 @@
+@import '../../../_styles/options/variables.scss';
+
+body {
+  background-color: #f4f6f8;
+}
+
+.Trip-categories {
+  .navpar {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+  }
+
+  .flex-betwen {
+    display: flex;
+    justify-content: space-between;
+
+    .nav-left {
+
+      width: 280px;
+      min-width: 280px;
+      max-width: 100%;
+
+      &>div {
+        width: 280px;
+        min-width: 280px;
+        max-width: 100%;
+        position: fixed;
+        left: 0px;
+        top: 65px;
+        bottom: 0px;
+        overflow-y: auto;
+      }
+
+    }
+
+    .right-content {
+      width: 100%;
+      padding-top: 65px;
+
+      .padding {
+        padding-left: 45px;
+        padding-right: 40px;
+      }
+    }
+
+    .flex-space-between {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 25px;
+
+      .left-from {
+        background-color: white;
+        width: 40%;
+        padding-bottom: 30px;
+        border: 2px solid rgb(231, 229, 229);
+
+        .top-form {
+          p {
+            color: $colorSubBlack;
+            font-size: $sizeMainText;
+            font-weight: bold;
+          }
+
+          border-bottom:1px solid $colorSubBlack;
+          padding:20px;
+          padding-left:25px;
+          padding-right:25px;
+        }
+
+        .padd {
+          padding-left: 25px;
+          padding-right: 25px;
+
+          label {
+            color: $colorSubBlack;
+            font-size: $sizeMainText;
+            font-weight: bold;
+          }
+
+          select {
+            width: 100%;
+            padding: 10px;
+            font-size: $sizeMainText;
+            color: $colorSubBlack;
+            border: 2px solid rgb(242, 240, 240);
+            outline: none;
+            margin-top: 10px;
+            border-radius: 5px;
+          }
+
+          .add-btn {
+            color: $colorWhite;
+            font-size: $sizeMainText;
+            width: fit-content;
+            border-radius: 5px;
+            background-color: $colorPrimary;
+
+            &:hover {
+              cursor: pointer;
+              background-color: red;
+            }
+
+            padding:10px;
+            padding-left:20px;
+            padding-right:20px;
+
+          }
+        }
+
+      }
+
+      .right-form {
+        background-color: white;
+        width: 55%;
+        padding: 25px;
+        border-radius: 5px;
+        border: 2px solid rgb(231, 229, 229);
+        .form-table {
+          width: 100%;
+          table {
+            width: 100%;
+            border-collapse: collapse;
+
+            thead {
+              tr {
+                th {
+                  border: 1px solid black;
+                  font-size: $sizeMainText;
+                  padding: 5px;
+                  padding-bottom: 10px;
+
+                }
+              }
+            }
+
+            tbody {
+              tr {
+                td {
+                  border: 1px solid black;
+                  text-align: center;
+                  padding: 5px;
+                  font-size: $sizeMainText;
+                  padding-top: 10px;
+                  padding-bottom: 10px;
+                }
+
+                .delete {
+                  color: $colorPrimary;
+                  font-weight: bold;
+
+                  &:hover {
+                    cursor: pointer;
+                    color: red;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+
+
+}

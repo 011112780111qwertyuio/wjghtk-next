@@ -1,0 +1,94 @@
+@import '../../../_styles/options/variables.scss';
+
+.dashboard-control-banal {
+  .nav-top {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+  }
+
+
+  .flex-row {
+    display: flex;
+    justify-content: space-between;
+
+    .nav-left {
+      width: 280px;
+      min-width: 280px;
+      max-width: 100%;
+
+      &>div {
+        width: 280px;
+        min-width: 280px;
+        max-width: 100%;
+
+        position: fixed;
+        top: 65px;
+        bottom: 0px;
+        overflow-y: auto;
+        z-index: 999;
+      }
+
+    }
+
+    .content-dash {
+      width: 100%;
+      padding-top: 100px;
+
+      .title {
+        color: #212b3b;
+        font-size: $sizeLargText;
+        font-weight: bold;
+        padding-left: 35px;
+        padding-bottom: 25px;
+
+
+      }
+
+
+      .padding {
+        padding: 35px;
+
+
+      }
+
+    }
+  }
+
+}
+
+@media (min-width:87px) and (max-width:486px) {
+  .dashboard-control-banal {
+    .flex-row {
+      .nav-left {
+        display: none;
+      }
+
+      .content-dash {
+        width: 100% !important;
+
+
+      }
+    }
+  }
+}
+
+@media (min-width:487px) and (max-width:885px) {
+  .dashboard-control-banal {
+    .flex-row {
+      .nav-left {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width:886px) and (max-width:1106px) {
+  .dashboard-control-banal {
+    .flex-row {
+      .nav-left {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,153 @@
+@import '../../../_styles/options/variables.scss';
+
+.users {
+  .fit-content {
+    width: 100% !important;
+  }
+
+  .btn {
+    width: fit-content;
+    font-size: $sizeMainText;
+    color: $colorWhite;
+    padding: 10px;
+    left: 25px;
+    padding-right: 20px;
+    background-color: #5392fe;
+    border-radius: 3px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .nav-top {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+  }
+
+  input[type="text"],
+  select {
+    border: 1px solid rgb(187, 185, 185);
+    outline: none;
+    padding: 10px;
+    font-size: $sizeMainText;
+    margin-left: 15px;
+
+  }
+input[type="checkbox"]{
+  width:14px;
+  height: 14px;
+}
+  .flex-between {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    .nav-left {
+      min-width: 280px;
+      width: 20%;
+
+      &>div {
+        position: fixed;
+        overflow-y: auto;
+
+        left: 0px;
+        top: 65px;
+        bottom: 0px;
+        min-width: 280px;
+        width: 20%;
+      }
+    }
+
+    .from-right {
+      width: 78%;
+      padding-top: 100px;
+
+      .top-control {
+        display: flex;
+        justify-content: space-between;
+
+        .left {
+          p {
+            color: black;
+            font-size: $sizeLargText;
+            font-weight: bold;
+          }
+        }
+
+        .right {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+
+          .flex-div {
+            display: flex;
+
+            p {
+
+              background-color: #17a2b8;
+              margin-left: 20px;
+            }
+          }
+
+          span {
+            font-size: $sizeMainText;
+            color: $colorSubBlack;
+            font-style: italic;
+            margin-top: 10px;
+          }
+        }
+
+      }
+
+      .child-table {
+        background-color: $colorWhite;
+        padding: 25px;
+        padding-bottom:50px;
+        margin-top: 30px;
+        border: 1px solid rgb(202, 199, 199);
+        border-radius: 4px;
+        overflow-x: auto;
+
+        table {
+          width: 100%;
+          border-collapse: collapse;
+
+          thead {
+            tr {
+              th {
+                padding: 10px;
+
+                font-size: $sizeMainText;
+                border-bottom: 1px solid rgb(180, 179, 179);
+              }
+            }
+          }
+
+          tbody {
+
+            tr {
+              text-align: center;
+
+              td {
+                color: $colorBlack;
+                font-size: $sizeMainText;
+                padding: 10px;
+                border-bottom: 1px solid rgb(199, 196, 196);
+
+              }
+            }
+          }
+
+
+        }
+      }
+
+
+    }
+  }
+}

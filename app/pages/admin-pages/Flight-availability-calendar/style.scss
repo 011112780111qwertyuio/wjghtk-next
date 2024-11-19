@@ -1,0 +1,205 @@
+@import '../../../_styles/options/variables.scss';
+
+body {
+  background-color: #f4f6f8;
+}
+
+
+
+
+.flight-availability-calendar {
+  .fit-content {
+    width: 100% !important;
+  }
+
+  .navpar-top {
+
+    z-index: 999;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+  }
+
+  .flex-page {
+    display: flex;
+    justify-content: space-between;
+
+    .left-nav {
+      width: 20%;
+      width: 280px;
+      max-width: 280px;
+
+      .fixed-left {
+        width: 280px;
+        max-width: 280px;
+        position: fixed;
+        top: 65px;
+        bottom: 0px;
+        overflow-y: auto;
+
+      }
+    }
+
+    .right-page {
+      width: 87%;
+      padding-top: 67px;
+
+      .padding {
+        .title {
+          font-size: $sizeLargText;
+          font-weight: bold;
+          color: $colorBlack;
+          margin-top: 20px;
+          margin-left: 40px;
+        }
+
+        .from-content {
+          padding-left: 40px;
+          padding-right: 40px;
+          padding-top: 20px;
+
+          .child-search {
+            background-color: white;
+            padding: 20px;
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .search {
+              display: flex;
+
+              p {
+                background-color: royalblue;
+                color: white;
+                font-size: $sizeMainText;
+                padding: 12px;
+                margin-left: 10px;
+
+                &:hover {
+                  cursor: pointer;
+
+                }
+              }
+
+              input[type="text"] {
+                color: $colorBlack;
+                font-size: $sizeMainText;
+                text-align: center;
+                border: 1px solid $colorSubBlack;
+                outline: none;
+              }
+            }
+
+            .r-tile {
+              color: $colorBlack;
+              font-size: $sizeMainText;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-end;
+
+              .add {
+                background-color: blue;
+                padding: 10px;
+                color: white;
+                margin-top: 10px;
+
+                &:hover {
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+
+          .chile-spacing {
+            margin-top: 30px;
+            border: 1px solid $colorSubBlack;
+            background-color: white;
+
+            .tile {
+              background-color: white;
+              padding: 15px;
+              color: $colorBlack;
+              font-size: $sizeMainText;
+              font-weight: bold;
+              border-bottom: 1px solid black;
+            }
+
+            .row {
+              display: flex;
+              justify-content: space-between;
+
+              .items-tours-left {
+                font-size: $sizeMainText;
+                width: 25%;
+                background-color: #e6e6e6;
+                padding-top: 20px;
+
+                .child {
+                  padding: 15px;
+
+                  &:hover {
+                    cursor: pointer;
+                    background-color: white;
+                  }
+
+                  position: relative;
+                }
+
+
+
+
+
+              }
+
+              .ditls-right {
+                background-color: white;
+                padding: 20px;
+                width: 70%;
+              }
+            }
+
+
+
+          }
+        }
+      }
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+@media (max-width:900px) {
+  .flight-availability-calendar {
+    .flex-page {
+      .right-page {
+        width: 100%;
+
+        .chile-spacing {
+          .row {
+            flex-direction: column;
+
+            .items-tours-left {
+              width: 100% !important;
+            }
+
+            .ditls-right {
+              width: 100% !important;
+            }
+          }
+        }
+
+
+
+      }
+    }
+  }
+}

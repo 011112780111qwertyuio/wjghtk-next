@@ -1,0 +1,102 @@
+@import '../../../_styles/options/variables.scss';
+
+.coupon {
+  input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+  }
+
+  .fit-width {
+    width: 100% !important;
+  }
+
+  .nav-top {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+
+  }
+
+  .flex-between {
+    display: flex;
+    justify-content: space-between;
+
+    .left-n {
+      width: 20%;
+      min-width: 280px;
+
+      &>div {
+        width: 20%;
+        min-width: 280px;
+
+        position: fixed;
+        left: 0px;
+        top: 67px;
+        bottom: 0px;
+        overflow-y: scroll;
+      }
+
+
+    }
+
+    .form-right {
+      padding-top: 65px;
+      width: 80%;
+
+      .padding {
+        padding: 30px;
+
+        .from-table {
+          padding-top: 30px;
+          background-color: white;
+          padding: 20px;
+          margin-top: 20px;
+          overflow-x: auto;
+          box-shadow: 0 0 0 1px rgba(63, 63, 68, .05), 0 1px 3px 0 rgba(63, 63, 68, .15);
+
+          table {
+            width: 100%;
+            border-collapse: collapse;
+
+            thead {
+              tr {
+                vertical-align: inherit;
+
+                th {
+                  border-bottom: 2px solid #dee2e6;
+                  vertical-align: bottom;
+                  padding: 10px;
+                  font-size: $sizeMainText;
+                }
+              }
+            }
+
+            tbody {
+              tr {
+                vertical-align: inherit;
+                vertical-align: top;
+                text-align: center;
+
+                td {
+                  padding: 10px;
+                  font-size: $sizeMainText;
+
+                }
+
+              }
+            }
+
+
+          }
+
+          p {
+            font-size: $sizeMainText;
+            margin-top: 30px;
+            font-style: italic;
+            color: $colorSubBlack;
+          }
+        }
+      }
+    }
+  }
+}

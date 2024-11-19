@@ -1,0 +1,133 @@
+@import '../../../_styles/options/variables.scss';
+
+.reviews {
+  input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+  }
+  .fit-content{
+    width:100% !important;
+  }
+
+
+  .nav-top {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+  }
+
+  .flex-reviews {
+    display: flex;
+    justify-content: space-between;
+
+    .left-nav {
+      width: 20%;
+      min-width: 280px;
+
+      &>div {
+        width: 20%;
+        min-width: 280px;
+        position: fixed;
+        top: 65px;
+        left: 0px;
+        bottom: 0px;
+        overflow-y: auto;
+
+      }
+    }
+
+    .right-from {
+      padding-top: 65px;
+      width: 80%;
+.tile{
+  font-size: $sizeLargText;
+  font-weight: bold;
+  margin-left:30px;
+}
+      .flex {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+
+        .btns {
+          font-size: $sizeMainText;
+
+          a {
+            text-decoration: none;
+            margin: 10px;
+
+            span {
+              color: $colorBlack;
+              padding-right: 7px;
+            }
+          }
+
+        }
+
+        .btn-right {
+          color: $colorSubBlack;
+          font-size: $sizeMainText;
+          font-style: italic;
+        }
+      }
+
+      .child {
+        padding: 20px;
+
+        .scroll-table {
+          background-color: $colorWhite;
+          padding: 20px;
+          box-shadow: 0 0 0 1px rgba(63, 63, 68, .05), 0 1px 3px 0 rgba(63, 63, 68, .15);
+          overflow-x: scroll;
+
+          table {
+            width: 100%;
+            border-collapse: collapse;
+
+            thead {
+              font-size: $sizeMainText;
+
+              tr {
+                th {
+                  padding: 10px;
+                  border-bottom: 2px solid rgb(207, 205, 205);
+                }
+              }
+            }
+
+            tbody {
+              tr {
+                td {
+                  padding: 10px;
+                  text-align: center;
+                  font-size: $sizeMainText;
+                  border-bottom: 2px solid rgb(207, 205, 205);
+
+                  .tour {
+                    background-color: black;
+                    color: $colorWhite;
+                    padding: 5px;
+                    border-radius: 5px;
+                  }
+
+                  .ok {
+                    background-color: green;
+                    color: $colorWhite;
+                    padding: 5px;
+                    border-radius: 5px;
+                  }
+                }
+              }
+            }
+          }
+
+        }
+      }
+
+
+
+    }
+
+  }
+}

@@ -1,0 +1,186 @@
+@import '../../../_styles/options/variables.scss';
+.edit-coupon{
+  
+  .fit-content {
+    width: 100% !important;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 10px;
+    font-size: $sizeMainText;
+    border: 1px solid rgb(190, 189, 189);
+    outline: none;
+  }
+
+  label {
+    font-size: $sizeMainText;
+  }
+
+  .tile {
+    color: $colorBlack;
+    font-size: $sizeMainText;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(175, 173, 173);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+
+  .nav-top {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+  }
+
+  .flex-con {
+    display: flex;
+    justify-content: space-between;
+
+    .left-nav {
+      width: 20%;
+      min-width: 280px;
+
+      &>div {
+        width: 20%;
+        min-width: 280px;
+        position: fixed;
+        top: 65px;
+        left: 0px;
+        bottom: 0px;
+        overflow-y: auto;
+      }
+    }
+
+    .right-from {
+      padding-top: 70px;
+      width: 80%;
+
+      .padding {
+        padding: 20px;
+
+        .title-page {
+          color: $colorBlack;
+          font-weight: bold;
+          font-size: $sizeLargText;
+
+        }
+
+        .flex-from {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 40px;
+
+          .left {
+            width: 65%;
+            height: fit-content;
+            padding-bottom: 50px;
+
+            &>div {
+              padding: 20px;
+              box-shadow: 0 0 0 1px rgba(63, 63, 68, .05), 0 1px 3px 0 rgba(63, 63, 68, .15);
+              background-color: white;
+            }
+
+          }
+
+          .right {
+
+            width: 30%;
+
+            .child-1,
+            .child-2 {
+              box-shadow: 0 0 0 1px rgba(63, 63, 68, .05), 0 1px 3px 0 rgba(63, 63, 68, .15);
+              background-color: white;
+              padding: 20px;
+
+
+            }
+
+            .right-div {
+              display: flex;
+              justify-content: flex-end;
+              padding-top: 20px;
+
+              p {
+                background-color: #007bff;
+                width: fit-content;
+                padding: 10px;
+                padding-left: 15px;
+                padding-right: 15px;
+                color: white;
+                font-size: $sizeMainText;
+
+                &:hover {
+                  cursor: pointer;
+                }
+              }
+            }
+
+            .child-2 {
+              margin-bottom: 30px;
+
+              .image-paner {
+                width: 300px;
+                height: 300px;
+                max-width: 100%;
+                padding-bottom: 20px;
+                padding-top: 20px;
+
+              }
+            }
+
+
+          }
+
+        }
+
+      }
+    }
+  }
+
+
+
+}
+
+@media (max-width:1012px) {
+
+  .edit-coupon {
+    .flex-con {
+      display: flex;
+      justify-content: space-between;
+
+
+      .right-from {
+
+
+        .padding {
+
+
+
+          .flex-from {
+            flex-direction: column;
+
+            .left {
+              width: 100%;
+
+            }
+
+            .right {
+              width: 100%;
+              margin-top: 30px;
+            }
+
+          }
+
+        }
+      }
+    }
+  }
+
+
+
+}

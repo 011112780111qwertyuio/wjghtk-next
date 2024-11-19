@@ -1,0 +1,165 @@
+@import '../../../_styles/options/variables.scss';
+
+.edit-news {
+
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(188, 187, 187);
+    outline: none;
+    font-size: $sizeMainText;
+  }
+
+  label {
+    font-size: $sizeMainText;
+    color: $colorSubBlack;
+
+  }
+
+  .tile {
+    color: $colorBlack;
+    font-size: $sizeLargText;
+    font-weight: bold;
+    padding-bottom: 25px;
+    margin-top: 15px;
+  }
+
+  .title-top {
+    font-size: $sizeMainText;
+    color: $colorBlack;
+    border-bottom: 2px solid rgb(187, 184, 184);
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    font-weight: bold;
+  }
+
+  .child-card {
+    background-color: $colorWhite;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px rgba(63, 63, 68, .05), 0 1px 3px 0 rgba(63, 63, 68, .15);
+    padding-bottom: 35px;
+
+  }
+
+  .fit-content {
+    width: 100% !important;
+  }
+
+  .nav-top {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+  }
+
+  .flex-add-news {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .left-nav {
+      width: 20%;
+      min-width: 280px;
+
+      &>div {
+        position: fixed;
+        left: 0px;
+        top: 65px;
+        bottom: 0px;
+        min-width: 280px;
+        width: 20%;
+      }
+    }
+
+    .right-from {
+      padding-top: 65px;
+      width: 80%;
+
+      .flex-bwtween {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+
+        .left {
+          width: 70%;
+          margin-right: 25px;
+
+        }
+
+        .right {
+          width: 25%;
+          padding-top: 70px;
+
+          .btn-share {
+            color: $colorWhite;
+            font-size: $sizeMainText;
+            background-color: red;
+            width: fit-content;
+            padding: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-top: 15px;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          .child-1 {
+            margin-bottom: 20px;
+
+          }
+
+          .child-2 {
+            margin-bottom: 20px;
+
+            .view-tags {
+              display: flex;
+              flex-wrap: wrap;
+              padding-top: 15px;
+
+              .mytag {
+                display: flex;
+                width: fit-content;
+                padding: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                color: $colorWhite;
+                font-size: $sizeMainText;
+                background-color: red;
+                margin-left: 10px;
+                margin-bottom: 10px;
+
+                &:first-child {
+                  margin-left: 0px !important;
+                }
+
+                p {
+                  margin-right: 5px;
+                }
+
+                span {
+                  &:hover {
+                    cursor: pointer;
+                  }
+                }
+              }
+            }
+          }
+
+          .child-3 {
+            .size {
+              width: 100%;
+              height: 200px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
