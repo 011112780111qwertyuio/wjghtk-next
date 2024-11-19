@@ -1,0 +1,96 @@
+@import '../../_styles/options/variables.scss';
+
+.user-payment {
+  margin-top: 20px;
+
+  .title-inputs {
+    font-size: $sizeMainText;
+    color: $colorBlack;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  label {
+    font-size: $sizeMainText;
+    color: $colorSubBlack;
+
+  }
+
+
+  input[type="text"],
+  select,
+  textarea {
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: $sizeMainText;
+    width: 100%;
+
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+
+    .left {
+      width: 280px;
+      min-width: 280px;
+      max-width: 100%;
+    }
+
+    .right {
+      width: 70%;
+      padding-left: 50px;
+
+      .nav-title {
+        padding-top: 40px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgb(185, 181, 181);
+        line-height: 30px;
+
+        .tile {
+          color: $colorBlack;
+          font-weight: bold;
+          font-size: $sizeLargText;
+          text-transform: capitalize;
+        }
+
+        span {
+          color: $colorSubBlack;
+          font-size: $sizeMainText;
+        }
+
+      }
+
+
+
+
+
+
+    }
+  }
+
+
+
+}
+
+
+
+
+@media (min-width:16px) and (max-width:900px) {
+  .user-payment {
+    zoom: 0.9;
+
+    .flex {
+      flex-direction: column;
+
+      .right {
+        width: 100%;
+        padding: 0px;
+
+      }
+    }
+  }
+}
