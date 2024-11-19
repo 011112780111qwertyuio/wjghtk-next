@@ -1,0 +1,313 @@
+@import '../../../_styles/options/variables.scss';
+.view-my-reservation {
+  padding-top: 30px;
+  word-spacing: 2px;
+  line-height: 25px;
+
+  a {
+    text-decoration: none;
+  }
+
+  .top-title {
+    width: 100%;
+
+    a {
+      color: $colorPrimary;
+      font-size: $sizeMainText;
+      word-spacing: 2px;
+      text-decoration: none;
+
+      &:hover {
+        color: red;
+      }
+
+      span {
+        margin-left: 7px;
+      }
+    }
+  }
+
+  .row-tile {
+    margin-top: 20px;
+
+    a {
+      font-weight: bold;
+      font-size: $sizeLargText;
+      color: $colorPrimary;
+      display: inline;
+
+    }
+
+    p {
+      display: inline;
+
+      font-size: $sizeLargText;
+      color: $colorBlack;
+      font-weight: bold;
+      word-spacing: 2px;
+      margin-left: 10px;
+      white-space: nowrap;
+    }
+  }
+
+  .form-content {
+    border: 1px solid rgb(199, 197, 197);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    overflow: hidden;
+
+    .child-1,
+    .child-2,
+    .child-3 {
+      padding: 20px;
+    }
+
+    .child-1 {
+      width: 50%;
+
+      .column-1 {
+        &>p {
+          margin-bottom: 5px;
+          display: inline-block;
+        }
+
+        .view-map {
+          width: 100%;
+          height: 200px;
+          overflow: hidden;
+
+
+        }
+
+        .flex-between {
+          width: 100%;
+          padding-top: 10px;
+          font-size: $sizeMainText;
+          color: $colorBlack;
+          line-height: 20px;
+          word-spacing: 2px;
+        }
+      }
+
+      .column-2 {
+        margin-top: 20px;
+        padding-top: 20px;
+        width: 100%;
+        border-top: 1px solid rgb(199, 197, 197);
+
+        strong {
+          font-size: $sizeMainText;
+          margin-bottom: 10px;
+
+        }
+
+        span {
+          color: $colorBlack;
+          font-size: $sizeMainText;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          display: inline-block;
+        }
+
+        a {
+          font-size: $sizeMainText;
+        }
+      }
+
+      .column-3 {
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid rgb(199, 197, 197);
+
+        .row {
+          display: flex;
+
+          &>div {
+
+            a {
+              margin-top: 7px;
+              font-size: $sizeMainText;
+              display: inline-block;
+            }
+
+            strong {
+              font-size: $sizeMainText;
+            }
+          }
+
+          svg {
+            font-size: $sizeIconsMain;
+            margin-left: 10px;
+          }
+        }
+
+
+      }
+    }
+
+    .child-2 {
+      width: 50%;
+      border-right: 1px solid rgb(199, 197, 197);
+
+      .column-1 {
+        border-bottom: 1px solid rgb(199, 197, 197);
+        padding-bottom: 10px;
+
+        p {
+          color: $colorBlack;
+          font-size: $sizeMainText;
+          white-space: nowrap;
+
+
+        }
+
+        strong {
+          font-size: $sizeMainText;
+          white-space: wrap;
+
+        }
+      }
+
+      .column-2 {
+        padding: 10px;
+        border-bottom: 1px solid rgb(199, 197, 197);
+
+        span,
+        strong {
+          font-size: $sizeMainText;
+
+        }
+
+        .item-1 {
+          margin-bottom: 15px;
+        }
+      }
+
+      .column-3 {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgb(199, 197, 197);
+
+        .row-text {
+          display: flex;
+          align-items: center;
+          margin-top: 10px;
+
+          p {
+            font-size: $sizeMainText;
+            color: green;
+          }
+
+          svg {
+            font-size: $sizeIconsMain;
+            margin-left: 7px;
+            color: green
+          }
+        }
+      }
+
+      .column-4 {
+        padding-top: 15px;
+
+        p {
+          color: $colorBlack;
+          font-size: $sizeMainText;
+
+        }
+
+        strong {
+          font-size: $sizeMainText;
+          margin-top: 10px;
+          display: block;
+
+        }
+
+        .salre {
+          color: green;
+          font-size: $sizeLargText;
+          margin-top: 10px;
+          margin-bottom: 10px;
+
+        }
+
+        span {
+          color: $colorBlack;
+          font-size: $sizeMainText;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .child-3 {
+      width: 250px;
+      min-width: 250px;
+      background-color: #e6e6e6;
+
+      a {
+        font-size: $sizeMainText;
+        margin-bottom: 15px;
+        display: inline-block;
+      }
+
+      .column-1 {
+        border-bottom: 1px solid rgb(199, 197, 197);
+        padding-bottom: 20px;
+
+
+
+
+      }
+
+      .column-2 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+      }
+    }
+
+  }
+
+}
+
+@media (max-width:1000px) {
+  .view-my-reservation {
+
+    .row-tile {
+      zoom: 0.8;
+    }
+
+    .form-content {
+      flex-direction: column;
+
+      .view-map {
+        height: 300px !important;
+      }
+
+      .child-1,
+      .child-2,
+      .child-3 {
+        width: 100%;
+      }
+
+      .child-1 {
+        order: 2;
+      }
+
+      .child-3 {
+        order: 3;
+      }
+
+      .child-2 {
+        padding-bottom: 0px;
+
+      }
+
+
+    }
+  }
+}
