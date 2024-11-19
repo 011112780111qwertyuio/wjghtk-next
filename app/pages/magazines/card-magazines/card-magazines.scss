@@ -7,6 +7,10 @@
     word-break: break-all;
   }
 
+  &>a {
+    width: 100%;
+  }
+
   width: 32%;
   border-radius: 10px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -187,6 +191,7 @@
 @media(min-width:500px) and (max-width:649px) {
   .card-magazines {
     width: 100%;
+
   }
 }
 
@@ -194,6 +199,7 @@
   .card-magazines {
     width: 100%;
     zoom: 0.9;
+
   }
 }
 
