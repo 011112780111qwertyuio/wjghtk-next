@@ -1,0 +1,208 @@
+@import '../../../_styles/options/variables.scss';
+
+.navpar-control-content {
+
+  .nav-ditels {
+    width: 100%;
+
+    .top-flex {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .tile {
+        color: $colorBlack;
+        font-weight: bold;
+        font-size: $sizeLargText;
+
+      }
+
+      .btn {
+        color: $colorWhite;
+        font-size: $sizeMainText;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        height: 50px;
+        background-color: #007bff;
+        border-radius: 5px;
+
+        &:hover {
+          cursor: pointer;
+          background-color: rgb(111, 161, 205)
+        }
+      }
+
+    }
+
+    .space-between {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+
+      .left-flex {
+        display: flex;
+
+        select {
+          padding: 10px;
+          border: 1px solid rgb(177, 176, 176);
+          color: $colorSubBlack;
+          font-size: $sizeMainText;
+          outline: none;
+          width: 225px;
+          border-radius: 5px;
+
+          &:focus {
+            outline: 1px solid #007bff;
+
+
+          }
+        }
+
+        p {
+          background-color: #17a2b8;
+          color: $colorWhite;
+          font-size: $sizeMainText;
+          font-weight: bold;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 70px;
+          height: 50px;
+          margin-left: 20px;
+
+          &:hover {
+            cursor: pointer;
+            background-color: #1095a9;
+          }
+        }
+      }
+
+      .right-flex {
+        display: flex;
+
+        input {
+          font-size: $sizeMainText;
+          color: $colorSubBlack;
+          padding: 5px;
+          border: 1px solid rgb(200, 198, 198);
+
+          &:focus {
+            outline: 1px solid #007bff;
+          }
+        }
+
+        select {
+          background-color: #6c757d;
+          color: $colorWhite;
+          font-size: $sizeMainText;
+          padding-left: 10px;
+          padding-right: 10px;
+          width: 100px;
+          margin-left: 20px;
+
+
+        }
+
+        p {
+          color: $colorWhite;
+          background-color: #17a2b8;
+          font-size: $sizeMainText;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 70px;
+          margin-left: 20px;
+          height: 50px;
+
+          &:hover {
+            cursor: pointer;
+            background-color: #6c757d;
+          }
+        }
+
+      }
+
+    }
+  }
+}
+
+@media(min-width:96px) and (max-width:395px) {
+
+
+  .navpar-control-content {
+    .nav-ditels {
+      .top-flex {
+        flex-direction: column;
+
+        .btn {
+          width: 100%;
+          margin-top: 25px;
+        }
+      }
+
+      .space-between {
+
+
+        .right-flex {
+          flex-direction: column;
+
+          input {
+            padding-top: 10px;
+            padding-bottom: 10px;
+          }
+
+          select {
+            width: 100%;
+            margin-left: 0px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+          }
+
+          p {
+            width: 100%;
+            margin-left: 0px;
+
+
+
+          }
+
+        }
+
+      }
+    }
+
+
+
+
+
+  }
+
+
+}
+
+@media (min-width:3px) and (max-width:1132px) {
+  .navpar-control-content {
+    .nav-ditels {
+      .space-between {
+        flex-direction: column;
+        width: 100%;
+
+        .left-flex {
+          margin-bottom: 30px;
+
+        }
+
+        .right-flex {
+          justify-content: flex-end;
+
+        }
+
+      }
+    }
+  }
+}

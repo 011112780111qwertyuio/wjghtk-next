@@ -1,0 +1,94 @@
+@import '../../../_styles/options/variables.scss';
+.table-dashboard{
+
+
+  .from-table {
+    background-color: $colorWhite;
+    width: 100%;
+    overflow: scroll;
+
+    .flex-top-nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      border-bottom: 1px solid rgb(170, 168, 168);
+
+      p {
+        color: $colorBlack;
+        font-size: $sizeMainText;
+        font-weight: bold;
+      }
+
+      a {
+        color: #5aa9ff;
+        font-size: $sizeMainText;
+        text-decoration: none;
+        font-weight: bold;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        span {
+          font-size: $sizeIconsSmall;
+          padding-left: 5px;
+
+        }
+      }
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 40px;
+
+      thead {
+        color: $colorBlack;
+        font-size: $sizeMainText;
+        border-bottom: 1px solid black;
+
+        tr {
+          th {
+            padding: 10px;
+          }
+        }
+      }
+
+      tbody {
+        font-size: $sizeMainText;
+
+        tr {
+          border-bottom: 1px solid rgb(184, 182, 182);
+
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.044);
+
+          }
+
+          &:last-child {
+            border: none;
+          }
+
+          td {
+            padding: 5px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+
+            p {
+              width: 100%;
+              color: white;
+              text-align: center;
+              padding: 3px;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+
+
+    }
+
+
+  }
+}

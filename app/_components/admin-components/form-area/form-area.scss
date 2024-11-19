@@ -1,0 +1,27 @@
+@import '../../../_styles/options/variables.scss';
+
+.form-area {
+  .tiptap {
+    width: 100%;
+    min-height: 200px;
+    outline: none;
+    font-size: $sizeMainText;
+    border-top: none;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: none;
+    border: 1px solid black;
+
+    p {
+      strong {
+        font-size: $sizeLargText;
+
+      }
+      font-size: $sizeMainText;
+    }
+  }
+
+
+
+
+}

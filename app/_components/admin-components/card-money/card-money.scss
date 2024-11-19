@@ -1,0 +1,87 @@
+@import '../../../_styles/options/variables.scss';
+
+.card-money {
+  .flex-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 35px;
+    padding-right: 35px;
+
+    .card {
+      width: 23%;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      padding: 20px;
+
+      .flex-top {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        p {
+          color: $colorWhite;
+          font-size: $sizeMainText;
+
+        }
+
+        span {
+          position: absolute;
+          color: $colorWhite;
+          font-size: $sizeIconsMain;
+          background-color: rgba(255, 255, 255, 0.201);
+          padding: 10px;
+          border-radius: 50%;
+          right: 1px;
+          top: 0px;
+
+        }
+      }
+
+      .salry {
+        color: $colorWhite;
+        font-size: $sizeLargText;
+        margin-top: 10px;
+        margin-bottom: 12px;
+      }
+
+      .sub-tile {
+        color: $colorWhite;
+        font-size: $sizeMainText;
+      }
+    }
+  }
+
+}
+
+@media (min-width:87px) and (max-width:486px) {
+  .card-money {
+    width: 100%;
+
+    .flex-cards {
+      padding-left: 20px;
+      padding-right: 20px;
+      zoom: 0.9;
+
+      .card {
+        width: 100%;
+      }
+    }
+
+
+  }
+}
+
+@media (min-width:487px) and (max-width:885px) {
+  .card-money {
+    .flex-cards {
+      .card {
+        width: 48%;
+
+      }
+    }
+
+
+  }
+}

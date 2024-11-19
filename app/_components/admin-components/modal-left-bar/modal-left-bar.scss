@@ -1,0 +1,82 @@
+@import '../../../_styles/options/variables.scss';
+
+.modal-left-bar {
+  background-color: rgb(28, 39, 66);
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+.active-btn{
+  span,p{
+    color:$colorWhite;
+
+  }
+}
+  .card {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+
+    .flex-card {
+      display: flex;
+      justify-content: space-between;
+      color: rgb(123, 133, 162);
+      padding-bottom: 5px;
+      padding-left: 15px;
+      padding-right: 15px;
+
+      &>div {
+        display: flex;
+      }
+
+      &:hover {
+        color: $colorWhite;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+
+      span {
+        font-size: $sizeIconsSmall;
+
+      }
+
+      p {
+        font-size: $sizeSmallText;
+        margin-left: 10px;
+      }
+    }
+
+    .pop-menue {
+      padding-left: 30px;
+      padding-top: 10px;
+
+      .flex-card-pup {
+        display: flex;
+        padding-bottom: 10px;
+        color: rgb(123, 133, 162);
+
+        span {
+          margin-right: 10px
+        }
+
+        &:hover {
+          color: white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .tile-line {
+    width: 100%;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+
+    p {
+      color: #5d6e87;
+      font-size: $sizeSmallText;
+    }
+  }
+}

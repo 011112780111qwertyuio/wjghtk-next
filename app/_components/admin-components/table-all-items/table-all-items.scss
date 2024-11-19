@@ -1,0 +1,121 @@
+@import '../../../_styles/options/variables.scss';
+
+.table-all-items {
+  .scroll-from {
+    background-color: $colorWhite;
+    width: 100%;
+    padding-top: 15px;
+    margin-top: 20px;
+    overflow-x: scroll;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+
+      thead {
+        vertical-align: middle;
+        display: table-header-group;
+        border-bottom: 1px solid rgb(194, 193, 193);
+
+        tr {
+          th {
+            padding: 10px;
+            font-size: $sizeMainText;
+            color: $colorBlack;
+            vertical-align: bottom;
+
+
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          font-size: $sizeMainText;
+          color: $colorSubBlack;
+          border-bottom: 1px solid rgb(176, 173, 173);
+          line-height: 40px;
+
+          td {
+            padding: 10px;
+            vertical-align: top;
+            text-align: center;
+            font-size: $sizeMainText;
+            color: $colorSubBlack;
+
+            a {
+              color: #007bff;
+              text-decoration: none;
+              font-weight: bold;
+
+              &:hover {
+                text-decoration: underline;
+
+
+              }
+            }
+
+          }
+
+          .share {
+            span {
+
+              padding: 4px;
+              padding-left: 10px;
+              padding-right: 15px;
+              border-radius: 3px;
+            }
+          }
+
+          .active-share {
+            span {
+              background-color: green;
+              color: $colorWhite;
+
+            }
+          }
+
+          .off-share {
+            span {
+              background-color: #6c757d;
+              color: white;
+
+            }
+          }
+
+          .comment {
+            span {
+              background-color: #6c757d;
+              color: $colorWhite;
+              padding-top: 2px;
+              padding-bottom: 6px;
+              padding-left: 10px;
+              padding-right: 15px;
+              border-radius: 3px;
+              text-align: center;
+            }
+          }
+
+          select {
+            padding: 5px;
+            border: none;
+            outline: none;
+            width: 70px;
+            background-color: #17a2b8;
+            color: $colorWhite;
+            font-size: $sizeMainText;
+
+          }
+
+
+        }
+      }
+
+
+
+    }
+  }
+}

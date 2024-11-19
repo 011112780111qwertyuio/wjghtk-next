@@ -1,0 +1,239 @@
+@import '../../../_styles/options/variables.scss';
+
+.modal-add-trip-date {
+  input {
+    padding: 10px;
+    outline: none;
+    font-size: $sizeMainText;
+  }
+
+  input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+
+  label {
+    font-size: $sizeMainText;
+    color: $colorBlack;
+  }
+
+  .form-online-time {
+    border: 2px solid black;
+    padding: 7px;
+
+    .row {
+      display: flex;
+
+      .btn {
+        background-color: cornflowerblue;
+        text-align: center;
+        padding: 10px;
+        color: $colorWhite;
+        font-size: $sizeMainText;
+
+        &:hover {
+          cursor: pointer;
+
+        }
+      }
+    }
+
+    .show-times {
+      padding-top: 15px;
+      display: flex;
+
+      .flex-row {
+        margin-left: 15px;
+        margin-right: 15px;
+
+        span {
+          font-size: $sizeSmallText;
+          color: $colorPrimary;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        label {
+          margin-left: 5px;
+          font-size: $sizeMainText;
+          color: $colorBlack;
+        }
+
+        input[type="radio"] {
+          width: 15px;
+          height: 15px;
+        }
+      }
+
+
+
+    }
+
+
+  }
+
+  p {
+    color: $colorBlack;
+    font-size: $sizeMainText;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+
+  }
+
+  .delet {
+    padding: 10px;
+    color: $colorWhite;
+    font-size: $sizeMainText;
+    background-color: $colorPrimary;
+    text-align: center;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  background-color: rgba(0, 0, 0, 0.599);
+  padding: 20px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 9999;
+
+  .padding {
+    padding: 10px;
+    background-color: white;
+    width: 700px;
+    max-width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    overflow-y: scroll;
+    height: 80%;
+
+    .center {
+      width: 100%;
+
+
+      .top-nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        border-bottom: 1px solid black;
+
+        p,
+        span {
+          font-size: $sizeMainText;
+          color: $colorBlack;
+          font-weight: bold;
+
+        }
+
+        span:hover {
+          cursor: pointer;
+
+        }
+
+      }
+
+      .my-content {
+        .flex-space {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-top: 10px;
+
+          label {
+            width: 200px;
+          }
+        }
+
+        .datatime {
+          display: flex;
+          justify-content: space-between;
+
+          input[type="date"] {
+            width: 49%;
+
+          }
+        }
+
+        .add-option {
+          .box {
+
+            border: 1px solid black;
+            padding: 10px;
+
+            p {
+              margin-top: 10px;
+              padding: 10px;
+              color: $colorWhite;
+              font-size: $sizeMainText;
+              text-align: center;
+              background-color: rgb(17, 28, 239);
+
+              &:hover {
+                cursor: pointer;
+              }
+            }
+          }
+
+          .show-items {
+            margin-top: 10px;
+            border: 1px solid $colorSubBlack;
+            padding: 10px;
+          }
+
+          .fotter {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+            border-top: 1px solid $colorSubBlack;
+            margin-top: 25px;
+
+            .btn-save,
+            .btn-close {
+              color: $colorWhite;
+              font-size: $sizeMainText;
+              padding: 10px;
+
+              &:hover {
+                cursor: pointer;
+              }
+            }
+
+            .btn-close {
+              background-color: rgb(133, 131, 131);
+
+            }
+
+            .btn-save {
+              background-color: $colorPrimary;
+              margin-left: 12px;
+            }
+
+
+
+          }
+
+
+        }
+
+
+
+      }
+    }
+  }
+
+
+}

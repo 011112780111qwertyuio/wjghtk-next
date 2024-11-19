@@ -1,0 +1,146 @@
+@import '../../../_styles/options/variables.scss';
+
+.modal-Book-dates {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.319);
+  z-index: 9999;
+
+  .edit {
+    border: 2px solid red !important;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="date"] {
+    padding: 10px;
+    font-size: $sizeMainText;
+    color: black;
+    width: 100%;
+    border: 1px solid $colorSubBlack;
+    outline: none;
+
+  }
+
+  .box {
+    background-color: white;
+    width: 80%;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    max-height: 600px;
+    overflow-y: scroll;
+
+    .top {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid black;
+
+      p {
+        color: $colorBlack;
+        font-weight: bold;
+        font-size: $sizeMainText;
+      }
+
+      span {
+        color: $colorSubBlack;
+        font-size: $sizeMainText;
+        font-weight: bold;
+
+        &:hover {
+          color: $colorBlack;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .form {
+      padding: 20px;
+      .flex-space {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+
+        input[type="number"] {
+          width: 30%;
+        }
+      }
+
+      label {
+        color: $colorSubBlack;
+        font-size: $sizeMainText;
+
+
+      }
+
+      .show-times {
+        border: 2px solid red;
+        padding: 10px;
+
+        .wrap-items {
+          display: flex;
+
+          .row-flex {
+            margin-left: 10px;
+            margin-right: 10px;
+
+            input[type="radio"] {
+              width: 15px;
+              height: 15px;
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+
+
+
+
+    }
+
+    .fotter {
+      width: 100%;
+      border-top: 1px solid black;
+      padding: 20px;
+      display: flex;
+      justify-content: flex-end;
+
+      .save,
+      .close,
+      .loading {
+        padding: 20px;
+        color: $colorWhite;
+        font-size: $sizeMainText;
+        border-radius: 5px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .close {
+        background-color: $colorSubBlack;
+        margin-right: 20px;
+      }
+
+      .save {
+        background-color: $colorPrimary;
+      }
+
+      .loading {
+        background-color: rgb(186, 180, 180);
+      }
+
+
+    }
+
+
+  }
+
+}

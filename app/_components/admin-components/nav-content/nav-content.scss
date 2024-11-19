@@ -1,0 +1,47 @@
+@import '../../../_styles/options/variables.scss';
+
+.nav-content {
+  background-color: #e9ecef;
+  padding: 20px;
+
+  .flex-nav {
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+      display: flex;
+
+      a {
+        color: #5392fe;
+        font-size: $sizeMainText;
+        text-decoration: none;
+
+        &:hover {
+          color: black;
+
+          span {
+            color: black;
+          }
+        }
+
+        span {
+          font-size: $sizeIconsSmall;
+          color: #5392fe;
+        }
+      }
+
+      span {
+        color: $colorSubBlack;
+        font-size: $sizeMainText;
+        padding-left: 10px;
+        padding-right: 10px;
+
+      }
+      p{
+        color:$colorSubBlack;
+        font-size:$sizeMainText;
+      }
+
+    }
+  }
+}

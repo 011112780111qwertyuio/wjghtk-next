@@ -1,0 +1,100 @@
+@import '../../../_styles/options/variables.scss';
+
+.uplode-vip-image-paner {
+  height: 100%;
+  width: 100%;
+
+  .mypadding {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    background-color: $colorWhite;
+    margin-top: 30px;
+    position: relative;
+
+    label {
+      font-size: $sizeMainText;
+      color: $colorSubBlack;
+    }
+  }
+
+  .border-affter {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      height: 1px;
+      width: 100%;
+      top: 65px;
+      background-color: rgb(167, 163, 163);
+
+    }
+  }
+
+  .card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    overflow: hidden;
+
+    .img {
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .flex-ublode-control {
+      width: 100%;
+      height: 100px;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 50%;
+      transform: translateY(-50%);
+
+      button {
+        border: none;
+        outline: none;
+
+        background-color: #007bff;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: $colorWhite;
+        font-size: $sizeMainText;
+
+        input[type="file"] {
+          height: 100%;
+          width: 100%;
+        }
+
+      }
+    }
+
+    .delete {
+      background-color: $colorPrimary;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 10px;
+      color: $colorWhite;
+      font-size: $sizeMainText;
+
+      &:hover {
+        cursor: pointer;
+        background-color: red;
+      }
+    }
+
+  }
+
+}
