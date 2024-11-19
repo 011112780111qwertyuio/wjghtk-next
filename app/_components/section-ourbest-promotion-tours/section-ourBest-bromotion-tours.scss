@@ -1,0 +1,252 @@
+@import '../../_styles/options/variables.scss';
+
+.section-ourbest-promotion-tours {
+  background-color: $colorBody;
+  margin-top: 30px;
+  padding-top: 35px;
+padding-bottom:60px;
+
+
+  .title {
+    font-size: $sizeLargText;
+    color: $colorBlack;
+
+  }
+
+  .sub-tile {
+    color: $colorSubBlack;
+    font-size: $sizeSmallText;
+    margin-top: 5px;
+  }
+
+  .flex-cards {
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .card {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      margin-top: 40px;
+      width: 31%;
+
+      &:hover {
+        .view {
+          .view-action {
+            opacity: 1;
+            transition: all 0.3s ease-in-out;
+
+            &>p {
+
+              transform: scale(1);
+              transition: all 0.3s ease-in-out;
+
+              &:hover {
+                cursor: pointer;
+              }
+
+            }
+
+          }
+
+
+
+        }
+      }
+
+      border-radius: 10px;
+
+      .view {
+        position: relative;
+        width: 100%;
+        height: 230px;
+        overflow: hidden;
+
+        .heart {
+          position: absolute;
+          z-index: 999;
+          color: $colorWhite;
+          font-size: $sizeIconsSmall;
+          bottom: 20px;
+          right: 20px;
+
+          &:hover {
+            cursor: pointer;
+            color: $colorSubRed;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+
+
+        img {
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+        }
+
+        .tecit {
+          background-color: $colorSubRed;
+          width: 150px;
+          height: 50px;
+          display: block;
+          text-align: center;
+          color: $colorWhite;
+          font-size: $sizeMainText;
+          padding-top: 23px;
+          position: absolute;
+          top: -5px;
+          right: -59px;
+          transform: rotate(45deg);
+          z-index: 999;
+          
+        }
+
+        .add-card-tikei {
+          background-color: $colorSubRed;
+          width:fit-content;
+          padding-left:10px;
+          padding-right:10px;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          display: block;
+          text-align: center;
+          color: $colorWhite;
+          font-size: $sizeMainText;
+          letter-spacing: 1px;
+          position: absolute;
+          top: 20px;
+          left: 0px;
+          z-index: 999;
+
+        }
+
+        .view-action {
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          bottom: 0px;
+          left: 0px;
+          background-color: rgba(10, 9, 9, 0.283);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          opacity: 0;
+
+          p {
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: block;
+            text-align: center;
+            background-color: $colorPrimary;
+            color: $colorWhite;
+            font-size: $sizeMainText;
+            letter-spacing: 1px;
+            border-radius: 15px;
+            transform: scale(0);
+
+
+          }
+        }
+
+
+
+      }
+
+      .content-card {
+        width: 100%;
+        background-color: $colorWhite;
+
+        padding: 15px;
+
+        .flex-content {
+          display: flex;
+          justify-content: space-between;
+
+          .left {
+            width: 60%;
+            padding-right: 10px;
+            font-size: $sizeMainText;
+            color: $colorBlack;
+            font-weight: bold;
+            line-height: 20px;
+
+            .sub-text {
+              color: $colorSubBlack;
+              font-size: $sizeSmallText;
+              margin-top: 10px;
+
+            }
+          }
+
+          .right {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding-left: 10px;
+
+            &>a {
+              text-decoration: line-through;
+              color: $colorSubRed;
+              font-size: $sizeSmallText;
+            }
+
+            &>p {
+              color: $colorBlack;
+              font-weight: bold;
+              font-size: $sizeLargText;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+}
+
+
+@media (min-width:280px) and (max-width:349px) {
+  .section-ourbest-promotion-tours {
+    .flex-cards {
+      .card {
+        width: 100%;
+        zoom: 0.9;
+
+        .view {
+          height: 210px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width:350px) and (max-width:679px) {
+  .section-ourbest-promotion-tours {
+    .flex-cards {
+      .card {
+        width: 100%;
+
+        .view {
+          height: 250px;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (min-width:680px) and (max-width:969px) {
+  .section-ourbest-promotion-tours {
+    .flex-cards {
+      .card {
+        width: 48%;
+      }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+@import '../../_styles/options/variables.scss';
+
+.section-send-inpox {
+  background-color: $colorBody;
+  min-height: 170px;
+  display: flex;
+  align-items: center;
+
+  .card {
+    display: flex;
+    justify-content: space-between;
+
+    .card-flex-left {
+      display: flex;
+      align-items: center;
+      min-width: 50%;
+
+      .left {
+        margin-left: 40px;
+      }
+
+      .right {
+        .title {
+          color: $colorBlack;
+          font-size: $sizeLargText;
+
+        }
+
+        .sub-tile {
+          color: $colorSubBlack;
+          font-size: $sizeSmallText;
+          margin-top: 7px;
+        }
+      }
+    }
+
+    .flex-search {
+      width: 50%;
+      padding-right: 50px;
+      display: flex;
+
+      p {
+        color: $colorWhite;
+        text-transform: uppercase;
+        background-color: $colorBlack;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      input[type="text"] {
+        width: 60%;
+        color: $colorSubBlack;
+        font-size: $sizeSmallText;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: 1px solid rgb(204, 203, 203);
+        outline: none;
+      }
+
+    }
+
+
+  }
+
+}
+
+
+@media (min-width:79px) and (max-width:679px) {
+  .section-send-inpox {
+    height: 200px;
+    .card {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      zoom: 0.8;
+      .card-flex-left{
+        width: 100%;
+        margin-bottom: 25px;
+      }
+      .flex-search{
+        width: 100%;
+        height: 50px;
+      }
+    }
+  }
+}
+
+
+
+@media (min-width:680px) and (max-width:768px) {
+  .section-send-inpox {
+    .card {
+      zoom: 0.7;
+    }
+  }
+}
+
+
+@media (min-width:769px) and (max-width:864px) {
+  .section-send-inpox {
+    .card {
+      zoom: 0.8;
+    }
+  }
+}
+
+
+@media (min-width:865px) and (max-width:969px) {
+  .section-send-inpox {
+    .card {
+      zoom: 0.9;
+    }
+  }
+}

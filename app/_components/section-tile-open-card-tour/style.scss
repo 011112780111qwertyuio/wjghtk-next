@@ -1,0 +1,203 @@
+@import '../../_styles/options/variables.scss';
+
+.section-tile-open-card-tour {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f2f4f3;
+
+  .line {
+    height: 13px;
+    width: 300px;
+    border-radius: 50px;
+  }
+
+  .line1 {
+    width: 150px;
+    margin-top: 0;
+  }
+
+  .line2 {
+    width: 220px;
+    margin-bottom: 15px;
+  }
+
+  .line4 {
+    width: 90px;
+    margin-bottom: 15px;
+  }
+
+  .loading-animation {
+    overflow: hidden;
+    background: #D0D0D0;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      animation: loading 1s infinite;
+      background: linear-gradient(to right, transparent, #D9D9D9, transparent);
+    }
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+      .title {
+        color: $colorBlack;
+        font-size: $sizeLargText;
+        font-weight: bold;
+        margin-bottom: 10px;
+
+      }
+
+      .flex-text {
+        display: flex;
+
+        span {
+          color: $colorPrimary;
+          font-size: $sizeIconsSmall;
+          margin-left: 10px;
+        }
+
+        p {
+          font-size: $sizeMainText;
+          color: $colorSubBlack;
+          text-transform: uppercase;
+        }
+
+
+
+
+
+
+
+
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 15px;
+
+      .mycard {
+        display: flex;
+
+        margin-right: 35px;
+        margin-bottom: 20px;
+
+        &>div {
+          svg {
+            font-size: $sizeIconsMain;
+            color: $colorPrimary;
+
+
+          }
+        }
+
+        .column {
+          padding-right: 15px;
+
+          .sub-tile {
+            color: $colorSubBlack;
+            font-size: $sizeSmallText;
+            margin-bottom: 5px;
+          }
+
+          .price {
+            color: $colorBlack;
+            font-size: $sizeMainText;
+            font-weight: bold;
+            display: inline-block;
+
+          }
+
+
+
+          .of {
+            color: rgb(122, 122, 122);
+            font-size: 16px;
+            margin-right: 3px;
+            text-decoration: line-through;
+            font-weight: 300;
+
+          }
+        }
+
+
+
+      }
+    }
+  }
+
+
+}
+
+
+
+@keyframes loading {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
+@media(max-width:1114px) {
+
+  .section-tile-open-card-tour {
+    .content {
+      width: 100%;
+    }
+
+  }
+
+}
+
+@media (min-width:30px) and (max-width:1006px) {
+
+  .section-tile-open-card-tour {
+    .content {
+      padding-right: 0px;
+    }
+
+    .flex {
+      flex-direction: column;
+
+      .left {
+        margin-bottom: 20px;
+        padding-right: 15px;
+      }
+
+      .right {
+        padding-top: 30px;
+        padding-right: 15px;
+        border-top: 2px solid rgb(193, 191, 191);
+
+        .mycard {
+          margin-right: 0px;
+          margin-left: 35px;
+        }
+
+      }
+    }
+
+  }
+
+}
+
+@media (max-width:600px) {
+  .section-tile-open-card-tour {
+    .flex {
+      .left {
+        zoom: 0.8;
+      }
+    }
+  }
+}

@@ -1,0 +1,122 @@
+@import '../../_styles/options/variables.scss';
+
+.section-user {
+  margin-top: 70px;
+
+
+  .title {
+    color: $colorBlack;
+    font-size: $sizeLargText;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .flex-cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .card {
+      margin-bottom: 25px;
+      border: 1px solid rgb(199, 198, 198);
+      border-radius: 5px;
+      display: flex;
+      width: 32%;
+      min-height: 250px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 25px;
+
+      .flex-top {
+        display: flex;
+
+        .img {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            height: 100%;
+            transform: scale(1.2);
+          }
+        }
+
+        .flex-ditls {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          padding-right: 18px;
+
+          p {
+            color: $colorBlack;
+            font-weight: bold;
+            font-size: $sizeMainText;
+            text-transform: capitalize;
+            margin-bottom: 7px;
+
+          }
+
+          .flex-starts {
+            color: #FFDC00;
+            font-size: $sizeIconsSmall;
+
+            svg {
+              margin-left: 5px;
+            }
+          }
+        }
+
+
+      }
+    }
+
+    .myditls {
+      color: $colorSubBlack;
+      font-size: $sizeMainText;
+      line-height: 25px;
+      margin-top: 30px;
+    }
+  }
+
+}
+
+
+
+@media (max-width:299px) {
+  .section-user {
+    .flex-cards {
+      .card {
+        width: 100%;
+        zoom: 0.8;
+      }
+    }
+  }
+}
+
+@media (min-width:300px) and (max-width:776px) {
+  .section-user {
+    .flex-cards {
+      .card {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+@media (min-width:777px) and (max-width:969px) {
+  .section-user {
+    .flex-cards {
+      .card {
+        zoom: 0.9;
+      }
+    }
+  }
+}
+
+/*-----------------*/

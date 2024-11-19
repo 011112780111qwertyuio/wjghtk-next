@@ -1,0 +1,133 @@
+@import '../../_styles/options/variables.scss';
+
+
+.open-card {
+  height: auto !important;
+  overflow: visible !important;
+  border: 2px solid rgb(212, 211, 211);
+  padding-bottom: 30px;
+  padding-top: 10px;
+  transition: all 0.3s ease-in-out;
+
+
+  .flex-tile {
+    background-color: white !important;
+    transition: all 0.3s ease-in-out;
+
+    p {
+      color: black !important;
+    }
+
+    span {
+      color: black !important;
+      transform: rotate(3.142rad);
+      transition: all 0.3s ease-in-out;
+
+    }
+  }
+}
+
+.section-tour-plan {
+  .card-title {
+    font-size: 1.25rem;
+    line-height: 1.33;
+    font-weight: 700;
+
+    &.skeleton {
+      // NOTICE THIS
+      height: 55px;
+      width: 100%;
+      border-radius: 4px;
+      margin-bottom: 20px;
+
+    }
+  }
+
+  .skeleton {
+    background-color: #e2e5e7;
+    // The shine that's going to move across the skeleton:
+    background-image:
+      linear-gradient(90deg,
+        rgba(#fff, 0),
+        rgba(#fff, 0.5),
+        rgba(#fff, 0));
+    background-size: 40px 100%; // width of the shine
+    background-repeat: no-repeat; // No need to repeat the shine effect
+    background-position: left -40px top 0; // Place shine on the left side, with offset on the left based on the width of the shine - see background-size
+    animation: shine 1s ease infinite; // increase animation time to see effect in 'slow-mo'
+  }
+
+  .title-plan {
+    color: $colorBlack;
+    font-weight: bold;
+    font-size: $sizeLargText;
+
+  }
+
+  .flex-items {
+    padding-top: 35px;
+
+    .mycard {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      height: 65px;
+      margin-bottom: 15px;
+
+
+      .flex-tile {
+        &:hover {
+          cursor: pointer;
+        }
+
+        border-radius: 10px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: $colorPrimary;
+
+        p {
+          color: $colorWhite;
+          font-weight: bold;
+          font-size: $sizeMainText;
+        }
+
+        span {
+          color: $colorWhite;
+          font-size: $sizeIconsMain;
+        }
+
+      }
+
+      .mycontent {
+        padding-left: 25px;
+        padding-right: 25px;
+
+        p {
+          color: $colorSubBlack;
+          font-size: $sizeMainText;
+          word-spacing: 2px;
+          line-height: 33px;
+        }
+      }
+
+
+    }
+  }
+}
+
+
+
+
+@keyframes shine {
+  to {
+    // Move shine from left to right, with offset on the right based on the width of the shine - see background-size
+    background-position: right -40px top 0;
+  }
+}

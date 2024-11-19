@@ -1,0 +1,208 @@
+@import '../../_styles/options/variables.scss';
+
+/* start title reviow */
+.tile-reviwos {
+
+
+
+
+  padding-top: 40px;
+
+  .flex-tile-revi {
+    display: flex;
+    justify-content: space-between;
+
+
+
+    .right {
+      display: flex;
+
+      .mycard {
+        position: relative;
+        border-radius: 20px;
+        margin-right: 20px;
+        width: 150px;
+        height: 40px;
+        background-color: #e8ebea;
+
+        &:hover {
+          transition: all 0.3s ease-in-out;
+          background-color: $colorPrimary;
+          cursor: pointer;
+
+          .flex {
+            color: $colorWhite;
+          }
+
+        }
+
+        .flex {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $colorSubBlack;
+          font-size: $sizeSmallText;
+
+          span {
+            margin-left: 10px;
+          }
+
+        }
+
+        .pop-menue {
+          z-index: 999;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          border-radius: 5px;
+          background-color: $colorWhite;
+          position: absolute;
+          width: 300px;
+          height: 90px;
+          top: -100px;
+          left: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &>div {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #eaeceb;
+            margin-right: 10px;
+            margin-left: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+              transition: all 0.4s;
+              background-color: $colorPrimary;
+
+              span,
+              p {
+                color: $colorWhite;
+
+              }
+            }
+
+            span {
+              color: $colorBlack;
+              font-size: $sizeIconsSmall;
+            }
+
+            p {
+              color: $colorBlack;
+              font-weight: bold;
+              font-size: $sizeSmallText;
+
+            }
+          }
+        }
+
+      }
+    }
+
+
+  }
+}
+
+/* stop title reviow */
+/* start title reviow */
+
+@media (max-width:781px) {
+  .tile-reviwos {
+    .flex-tile-revi {
+      .right {
+        .mycard {
+          .pop-menue {
+            left: 0px;
+
+          }
+        }
+      }
+    }
+
+  }
+
+}
+
+@media (max-width:1114px) {
+  .tile-reviwos {
+    .content {
+      width: 100%;
+    }
+
+  }
+
+}
+
+
+@media (min-width:100px) and (max-width:456px) {
+  .tile-reviwos {
+
+    .flex-tile-revi {
+      flex-direction: column;
+
+      .left {
+        .stars {
+          zoom: 0.8;
+        }
+      }
+
+      .right {
+        zoom: 0.9;
+        padding-top: 20px;
+        flex-direction: column;
+
+        .mycard {
+          margin-right: 0px;
+          margin-left: 20px;
+          margin-top: 20px;
+          width: 190px;
+        }
+
+      }
+    }
+
+  }
+
+}
+
+@media (min-width:457px) and (max-width:781px) {
+
+  .tile-reviwos {
+
+    .flex-tile-revi {
+      flex-direction: column;
+
+      .right {
+        zoom: 0.8;
+        padding-top: 20px;
+
+        .mycard {
+          margin-right: 0px;
+          margin-left: 20px;
+        }
+
+      }
+    }
+
+  }
+
+}
+
+@media (min-width:782px) and (max-width:866px) {
+  .tile-reviwos {
+    .flex-tile-revi {
+      .right {
+        zoom: 0.8;
+      }
+    }
+
+  }
+
+}
+
+/* stop title reviow */

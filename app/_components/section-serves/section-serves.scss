@@ -1,0 +1,341 @@
+@import '../../_styles/options/variables.scss';
+
+.section-serves {
+  a {
+    display: inline-block;
+  }
+
+  .flex-cards {
+    padding-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &>div {
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      position: relative;
+      width: 44%;
+      height: 400px;
+      padding-top: 35px;
+      padding-right: 20px;
+      background-image: url(/images/editshot.png);
+      background-size: cover;
+      background-position: center;
+
+      .butn {
+        background-color: $colorRed;
+        width: 160px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: $colorWhite;
+
+      }
+
+      .content-card {
+        position: absolute;
+        width: 55%;
+        top: 130px;
+
+        .title {
+          color: $colorWhite;
+          font-weight: bold;
+          font-size: $sizeLargText;
+          text-transform: capitalize;
+        }
+
+        .content-text {
+          color: $colorWhite;
+          font-size: $sizeMainText;
+          text-transform: capitalize;
+          margin-top: 20px;
+          margin-bottom: 25px;
+          line-height: 25px;
+        }
+
+        .btn-dealis {
+          border: 1px solid $colorWhite;
+          width: 140px;
+          color: $colorWhite;
+          text-align: center;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          font-size: $sizeMainText;
+          font-weight: bold;
+          text-transform: capitalize;
+          border-radius: 4px;
+          opacity: 0;
+          text-decoration: none;
+
+          &:hover {
+            background-color: $colorWhite;
+            color: $colorPrimary;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+
+      }
+
+      &:hover {
+
+        .content-card {
+          transition: all 0.3s ease-in-out;
+
+          top: 80px;
+
+          .btn-dealis {
+            opacity: 1;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+
+      }
+
+    }
+
+    .card-2 {
+      position: relative;
+      width: 24%;
+      height: 400px;
+      padding-top: 20px;
+      padding-right: 20px;
+      background-image: linear-gradient(45deg, #518CE8, #518be8ce), url(/images/img2.jpg);
+      background-size: cover;
+      background-position: center;
+
+      svg {
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: $colorWhite;
+        font-size: $sizeIconsLarg;
+
+      }
+
+      .content-card {
+        position: absolute;
+        width: 55%;
+        top: 130px;
+
+        .title {
+          color: $colorWhite;
+          font-weight: bold;
+          font-size: $sizeLargText;
+          text-transform: capitalize;
+        }
+
+        .content-text {
+          color: $colorWhite;
+          font-size: $sizeMainText;
+          text-transform: capitalize;
+          margin-top: 20px;
+          margin-bottom: 25px;
+          line-height: 25px;
+        }
+
+        .btn-dealis {
+          border: 1px solid $colorWhite;
+          width: 140px;
+          color: $colorWhite;
+          text-align: center;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          font-size: $sizeMainText;
+          font-weight: bold;
+          text-transform: capitalize;
+          border-radius: 4px;
+          opacity: 0;
+
+          &:hover {
+            background-color: $colorWhite;
+            color: $colorPrimary;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+
+      }
+
+      &:hover {
+
+        .content-card {
+          transition: all 0.3s ease-in-out;
+
+          top: 80px;
+
+          .btn-dealis {
+            opacity: 1;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+
+      }
+
+    }
+
+    .card-3 {
+      position: relative;
+      width: 24%;
+      height: 400px;
+      padding-top: 20px;
+      padding-right: 20px;
+      background-image: linear-gradient(45deg, #e4be37, #e4be37e4), url(/images/img1.jpg);
+      background-size: cover;
+      background-position: center;
+
+      svg {
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: $colorWhite;
+        font-size: $sizeIconsLarg;
+
+      }
+
+      .content-card {
+        position: absolute;
+        width: 55%;
+        top: 130px;
+
+        .title {
+          color: $colorWhite;
+          font-weight: bold;
+          font-size: $sizeLargText;
+          text-transform: capitalize;
+        }
+
+        .content-text {
+          color: $colorWhite;
+          font-size: $sizeMainText;
+          text-transform: capitalize;
+          margin-top: 20px;
+          margin-bottom: 25px;
+          line-height: 25px;
+        }
+
+        .btn-dealis {
+          border: 1px solid $colorWhite;
+          width: 140px;
+          color: $colorWhite;
+          text-align: center;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          font-size: $sizeMainText;
+          font-weight: bold;
+          text-transform: capitalize;
+          border-radius: 4px;
+          opacity: 0;
+
+          &:hover {
+            background-color: $colorWhite;
+            color: $colorPrimary;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+
+      }
+
+      &:hover {
+
+        .content-card {
+          transition: all 0.3s ease-in-out;
+
+          top: 80px;
+
+          .btn-dealis {
+            opacity: 1;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+
+      }
+
+    }
+  }
+
+
+}
+
+
+/* media query */
+
+
+@media (max-width:399px) {
+  .section-serves {
+    zoom: 0.9;
+
+    .flex-cards {
+
+      &>div {
+        height: 380px !important;
+      }
+
+      .card {
+        width: 100%;
+      }
+
+      .card-2 {
+        width: 100%;
+      }
+
+      .card-3 {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+@media (min-width:400px) and (max-width:768px) {
+  .section-serves {
+    .flex-cards {
+      &>div {
+        height: 360px !important;
+      }
+
+      .card {
+        width: 100%;
+      }
+
+      .card-2 {
+        width: 100%;
+      }
+
+      .card-3 {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width:769px) and (max-width:864px) {
+  .section-serves {
+    .flex-cards {
+      .card {
+        width: 37%;
+      }
+
+      .card-2 {
+        width: 29%;
+      }
+
+      .card-3 {
+        width: 29%;
+        min-height: 40px;
+      }
+    }
+  }
+}
+
+
+@media (max-width:1000px) {
+  .section-serves {
+    margin-top: 380px;
+  }
+}
+
+/* stop media query */
