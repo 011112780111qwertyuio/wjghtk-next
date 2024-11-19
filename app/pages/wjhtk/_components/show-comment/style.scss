@@ -1,0 +1,109 @@
+@import '../../../../_styles/options/variables.scss';
+
+.show-comment {
+  .deleted {
+    color: red !important;
+    font-weight: bold;
+    font-size: $sizeMainText;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+  }
+
+  .card-comment {
+    background-color: #F3F8F6;
+    width: 100%;
+    display: flex;
+    padding: 30px;
+    border-radius: 10px;
+
+    .avatar {
+      width: 170px;
+      min-width: 170px;
+      height: 170px;
+      border-radius: 3px;
+      background-color: #C5C5C5;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+
+      svg {
+        color: $colorWhite;
+        font-size: 155px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .ditls-comment {
+      padding-right: 20px;
+
+      .name-user {
+        color: $colorBlack;
+        font-size: $sizeLargText;
+        font-weight: bold;
+        text-transform: capitalize;
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          height: 4px;
+          width: 40px;
+          background-color: $colorPrimary;
+          right: 0px;
+          bottom: -10px;
+        }
+      }
+
+      .write-comment {
+        padding-top: 20px;
+
+        p {
+          color: $colorSubBlack;
+          font-size: $sizeMainText;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:700px) {
+  .show-comment {
+    .card-comment {
+      .avatar {
+        width: 150px;
+        min-width: 150px;
+        height: 150px;
+        zoom: 0.9;
+
+        svg {
+          font-size: 135px;
+
+        }
+      }
+      .name-user {
+        font-size: $sizeMainText !important;
+      }
+    }
+  }
+}
+
+@media(max-width:550px) {
+  .show-comment {
+    .card-comment {
+      flex-direction: column;
+
+      .ditls-comment {
+        padding-right: 0px;
+        padding-top: 15px;
+      }
+    }
+  }
+}

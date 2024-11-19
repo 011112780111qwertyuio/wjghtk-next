@@ -1,0 +1,93 @@
+@import '../../../../_styles/options/variables.scss';
+
+.send-comment {
+
+
+  .name-comment {
+    color: $colorBlack;
+    font-size: $sizeLargText;
+    font-weight: bold;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: $colorPrimary;
+      width: 40px;
+      height: 3px;
+      right: 0px;
+      bottom: -20px;
+    }
+  }
+
+  .form-send-comment {
+    width: 100%;
+    padding-top: 30px;
+
+    .area {
+      height: 220px;
+      background-color: #F3F8F6;
+      margin-top: 20px;
+      overflow: hidden;
+      border-radius: 10px;
+
+      textarea {
+        padding: 20px;
+        width: 100%;
+        font-size: $sizeMainText;
+        color: $colorBlack;
+        outline: none;
+        border: none;
+        background-color: #F3F8F6;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        min-width: 100%;
+        min-height: 100%;
+      }
+    }
+
+    .send-comment,
+    .send-loading {
+      font-size: $sizeMainText;
+      color: $colorWhite;
+      padding: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      width: fit-content;
+      border-radius: 5px;
+
+
+    }
+
+    .send-loading {
+      background-color: rgb(160, 156, 156);
+
+    }
+
+    .send-comment {
+      background-color: $colorPrimary;
+
+      &:hover {
+        cursor: pointer;
+        background-color: red;
+      }
+    }
+
+
+
+  }
+
+  .name-noauh {
+    color: $colorSubBlack;
+    font-size: $sizeMainText;
+    margin-top: 20px;
+
+    a {
+      color: black;
+    }
+
+  }
+
+}
