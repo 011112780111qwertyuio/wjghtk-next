@@ -3,11 +3,11 @@ import axios from "axios";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComment } from '@fortawesome/free-solid-svg-icons';
 import Link from "next/link";
-const ShowToicp = ({ local }) => {
+const ShowToicp = async({ local }) => {
   let isloading = true;
   let data = [];
   const url = local + "/" + process.env.API_SHOWTOPICRECENRPOSTS;
-  axios.post(url).then(async (res) => {
+await axios.post(url).then(async (res) => {
     if (res?.data?.state === "ok-auth") {
       data = await res?.data?.mydata;
     }
