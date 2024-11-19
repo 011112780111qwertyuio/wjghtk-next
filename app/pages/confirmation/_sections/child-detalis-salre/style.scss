@@ -1,0 +1,201 @@
+@import '../../../../_styles/options/variables.scss';
+
+.detalis-salre {
+
+  .skeletonLoader {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    .child {
+      margin-top: 15px;
+
+      .flexChild {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+
+
+
+
+        .skeleton {
+          background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+          height: 20px;
+          /* أو أي ارتفاع تحتاجه */
+          border-radius: 4px;
+          position: relative;
+          overflow: hidden;
+          animation: loading 1.5s infinite;
+        }
+
+        @keyframes loading {
+          0% {
+            background-position: -200px 0;
+          }
+
+          100% {
+            background-position: 200px 0;
+          }
+        }
+
+
+      }
+
+
+
+
+    }
+
+
+
+  }
+
+
+
+
+
+
+
+  .child-5 {
+    margin-top: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid #ebf3ff;
+    border-radius: 20px 20px 0px 0px;
+
+    .flex-child-5 {
+
+      display: flex;
+      justify-content: space-between;
+      padding: 4px;
+      margin-bottom: 10px;
+      font-size: $sizeMainText;
+      color: $colorSubBlack;
+
+      div:last-child {
+        margin: 0px;
+      }
+    }
+  }
+
+  .child-6 {
+    background-color: #fafcff;
+
+    .row-child-6 {
+      display: flex;
+      justify-content: space-between;
+
+      .left-c-6 {
+        div {
+          p {
+            font-size: $sizeLargText;
+            color: $colorPrimary;
+            margin-right: 20px;
+          }
+
+          display: flex;
+          color:$colorBlack;
+          font-size:$sizeMainText;
+
+        }
+
+        span {
+          color: $colorSubBlack;
+          font-size: $sizeMainText;
+          margin-top: 15px;
+          font-weight: bold;
+          text-transform: uppercase;
+
+        }
+      }
+
+      .right-c-6 {
+        p {
+          font-size: $sizeLargText;
+          color: $colorSubBlack;
+          font-weight: bold;
+          text-align: right;
+        }
+
+        label {
+          color: $colorBlack;
+          font-size: $sizeMainText;
+          word-spacing: 3px;
+          display: block;
+          margin-bottom: 5px;
+          direction: rtl;
+        }
+      }
+    }
+
+    ul {
+      color: $colorBlack;
+      font-size: $sizeMainText;
+      margin-top: 15px;
+      list-style-type: none;
+
+      li {
+        line-height: 30px;
+      }
+    }
+  }
+
+  .child-7 {
+    background-color: #fafcff;
+    border-radius: 0px 0px 15px 15px;
+
+    .item-c-7 {
+      border-bottom: 1px solid #e0e1e2;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+
+      strong {
+        font-size: $sizeMainText;
+        color: $colorBlack;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: $sizeMainText;
+        line-height: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width:450px) {
+  .detalis-salre {
+    zoom: 0.9;
+
+    .child-5 {
+      .flex-child-5 {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media (max-width:380px) {
+  .detalis-salre {
+    .child-6 {
+      .row-child-6 {
+        flex-direction: column;
+
+        .left-c-6 {
+          width: 100%;
+        }
+
+        .right-c-6 {
+          width: 100%;
+
+          span {
+            text-align: right !important;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

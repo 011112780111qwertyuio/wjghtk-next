@@ -1,0 +1,262 @@
+@import '../../../../_styles/options/variables.scss';
+
+.child-details{
+&.skeleton {
+  .card {
+    display: flex;
+    justify-content: space-between;
+
+    .left-card {
+      width: 190px;
+      min-width: 190px;
+      height: 140px;
+      border-radius: 10px;
+      background-color: #e0e0e0; // Light gray for the skeleton
+      animation: pulse 1.5s infinite;
+
+      &.skeleton-img {
+        background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+        background-size: 200% 100%;
+        animation: loading 1.5s infinite;
+      }
+    }
+
+    .right-card {
+      width: 100%;
+      padding-left: 10px;
+
+      .skeleton-title {
+        height: 20px;
+        width: 60%;
+        background-color: #e0e0e0;
+        border-radius: 4px;
+        animation: pulse 1.5s infinite;
+        margin-bottom: 20px;
+      }
+
+      ul {
+        li {
+          margin-bottom: 25px;
+
+          .row-card {
+            display: flex;
+
+            div {
+              display: flex;
+
+              .skeleton-icon {
+                height: 20px;
+                width: 20px;
+                background-color: #e0e0e0;
+                border-radius: 50%;
+                margin-right: 10px;
+                animation: pulse 1.5s infinite;
+              }
+
+              .details {
+                .skeleton-text {
+                  height: 14px;
+                  width: 80%;
+                  background-color: #e0e0e0;
+                  border-radius: 4px;
+                  margin-bottom: 5px;
+                  animation: pulse 1.5s infinite;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+}
+// Keyframes for loading animations
+@keyframes pulse {
+  0% {
+    background-color: #e0e0e0;
+  }
+  50% {
+    background-color: #f0f0f0;
+  }
+  100% {
+    background-color: #e0e0e0;
+  }
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+
+
+
+
+
+
+.child-details {
+
+
+
+
+
+
+
+
+  margin-top: 30px;
+
+  .card {
+    display: flex;
+    justify-content: space-between;
+
+    .left-card {
+      width: 190px;
+      min-width: 190px;
+      height: 140px;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 40px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .right-card {
+      width: 100%;
+      padding-left: 10px;
+
+      .tile {
+        font-size: $sizeLargText;
+        font-weight: bold;
+        color: $colorPrimary;
+        margin-bottom: 30px;
+
+        &:hover {
+          color: black;
+          cursor: pointer;
+        }
+      }
+
+      ul {
+        .row-card {
+          display: flex;
+        }
+
+        li {
+          margin-bottom: 25px;
+
+          &>div {
+            display: flex;
+
+            a {
+              font-size: $sizeMainText;
+              padding: 10px;
+              text-decoration: none;
+              line-height: 40px;
+
+              &:hover {
+                background-color: rgba(0, 0, 0, 0.116);
+                transition: all 0.3s ease-in-out;
+              }
+            }
+
+            &>span {
+              padding: 10px;
+              padding-top: 0px;
+              font-size: $sizeIconsMain;
+              color: $colorBlack;
+            }
+
+            .ditls {
+              span {
+                color: $colorBlack;
+                font-size: $sizeMainText;
+              }
+
+              p {
+                color: $colorBlack;
+                font-weight: bold;
+                font-size: $sizeMainText;
+                margin-top: 5px;
+                margin-bottom: 5px;
+
+              }
+            }
+          }
+
+          .edit {
+            padding-right: 20px;
+            border-right: 1px solid $colorSubBlack;
+          }
+
+          div:last-child {
+            padding-left: 20px;
+          }
+        }
+      }
+
+
+    }
+
+
+
+
+
+
+  }
+}
+
+
+@media (max-width:700px) {
+  .child-details {
+    .card {
+      flex-direction: column;
+
+      .left-card {
+        width: 100%;
+        height: 250px;
+        margin-bottom: 20px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .left-card {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+@media (min-width:370px) and (max-width:450px) {
+  .child-details {
+    zoom: 0.9;
+
+  }
+}
+
+@media (min-width:0px) and (max-width:369px) {
+  .child-details {
+    zoom: 0.9;
+
+    .edit {
+      border: none !important;
+    }
+
+    .row-card {
+      flex-direction: column;
+
+      div:last-child {
+        margin-top: 10px;
+      }
+    }
+  }
+}

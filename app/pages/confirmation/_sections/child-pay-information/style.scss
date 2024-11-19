@@ -1,0 +1,45 @@
+@import '../../../../_styles/options/variables.scss';
+
+.pay-information {
+  margin-top: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.154);
+  padding: 20px;
+
+  .tile-pay {
+    color: $colorBlack;
+    font-size: $sizeLargText;
+    font-weight: bold;
+  }
+
+  span {
+    color: $colorSubBlack;
+    font-size: $sizeMainText;
+  }
+
+  .row-card-pay {
+    padding: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.154);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.154);
+    font-size: $sizeMainText;
+  }
+
+  .btn-pay {
+    border: 1px solid $colorPrimary;
+    padding: 10px;
+    border-radius: 5px;
+    color: $colorPrimary;
+    font-size: $sizeMainText;
+    width: fit-content;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+text-align: center;
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(255, 0, 0, 0.06);
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+}

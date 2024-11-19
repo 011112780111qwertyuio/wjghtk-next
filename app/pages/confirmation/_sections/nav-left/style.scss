@@ -1,0 +1,124 @@
+@import '../../../../_styles/options/variables.scss';
+$skeleton-color: #e0e0e0; // Light grey for skeleton
+$skeleton-animation-duration: 1.5s;
+.nav-left {
+  .child-1 {
+    background-color: #f1fef6;
+    border: 1px solid black;
+    font-size: $sizeMainText;
+
+    ul {
+      li {
+        display: inline-block;
+        line-height: 25px;
+        align-items: top;
+
+        svg {
+          font-size: $sizeIconsSmall;
+          margin-right: 5px;
+          color: #aeaeaf;
+          display: inline-block;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        p {
+          padding-right: 5px;
+          font-weight: bold;
+          display: inline-block;
+        }
+
+        span {
+          font-size: $sizeMainText;
+          font-weight: 400;
+          white-space: nowrap;
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  .child-2 {
+    border: 1px solid $colorSubBlack;
+    margin-top: 20px;
+
+    span {
+      font-size: $sizeMainText;
+      color: $colorBlack;
+    }
+
+    &>p {
+      font-size: $sizeMainText;
+      color: $colorBlack;
+      font-weight: bold;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+
+    ul {
+      margin-top: 5px;
+
+      li {
+        line-height: 35px;
+
+        span {
+          font-size: $sizeIconsSmall;
+          margin-left: 5px;
+        }
+
+        a {
+          font-size: $sizeMainText;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .sub-phone {
+      color: $colorSubBlack;
+    }
+
+    a {
+      font-size: $sizeMainText;
+      font-weight: bold;
+      line-height: 30px;
+    }
+  }
+
+  // Skeleton Loader Styles
+  .skeleton {
+    position: relative;
+
+    &-text {
+      background-color: $skeleton-color;
+      display: inline-block;
+      border-radius: 4px;
+      height: 12px; // Adjust height as needed
+      margin: 5px 0;
+      animation: pulse $skeleton-animation-duration infinite;
+    }
+
+    &.skeleton-text {
+      width: 100%; // Default width
+    }
+
+    &.skeleton-short {
+      width: 60%; // Shorter width for certain items
+    }
+  }
+
+  @keyframes pulse {
+    0% {
+      background-color: $skeleton-color;
+    }
+
+    50% {
+      background-color: lighten($skeleton-color, 10%);
+    }
+
+    100% {
+      background-color: $skeleton-color;
+    }
+  }
+}

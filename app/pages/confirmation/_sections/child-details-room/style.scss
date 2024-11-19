@@ -1,0 +1,224 @@
+@import '../../../../_styles/options/variables.scss';
+
+.detalis-room {
+  margin-top: 20px;
+  .skeleton-loader {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: pulse 1.5s infinite;
+
+    .skeleton-header {
+        width: 120px;
+        height: 18px;
+        background-color: #e0e0e0;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    .skeleton-content {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+
+        .skeleton-image {
+            width: 80px;
+            height: 60px;
+            border-radius: 5px;
+            background-color: #e0e0e0;
+            margin-right: 15px;
+        }
+
+        .skeleton-text-container {
+            flex-grow: 1;
+
+            .skeleton-title {
+                width: 90px;
+                height: 14px;
+                background-color: #e0e0e0;
+                border-radius: 5px;
+                margin-bottom: 8px;
+            }
+
+            .skeleton-text {
+                height: 12px;
+                background-color: #e0e0e0;
+                border-radius: 5px;
+                margin-bottom: 6px;
+
+                &.short {
+                    width: 60%;
+                }
+                &.long {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .skeleton-text {
+        height: 12px;
+        background-color: #e0e0e0;
+        border-radius: 5px;
+        margin-bottom: 10px;
+
+        &.short {
+            width: 70%;
+        }
+        &.long {
+            width: 90%;
+        }
+    }
+}
+
+@keyframes pulse {
+    0% {
+        background-color: #f0f0f0;
+    }
+    50% {
+        background-color: #e0e0e0;
+    }
+    100% {
+        background-color: #f0f0f0;
+    }
+}
+  
+
+
+
+
+  label {
+    line-height: 23px;
+  }
+
+  &>p {
+    font-size: $sizeLargText;
+    color: $colorBlack;
+    font-weight: bold;
+  }
+
+  .row-cild-4 {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+
+    &>p {
+      font-size: $sizeMainText;
+      font-weight: bold;
+    }
+
+    .myimg {
+      margin-left: 20px;
+      width: 85px;
+      min-width: 85px;
+      min-height: 75px;
+      height: 75px;
+      border-radius: 5px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  table {
+    border-collapse: separate;
+    border-spacing: 0 25px;
+
+    tbody {
+      vertical-align: top;
+
+      tr {
+
+        th {
+
+          width: 150px;
+          text-align: right;
+          font-size: $sizeMainText;
+
+        }
+
+        td {
+          font-size: $sizeMainText;
+
+          span {
+            color: red;
+            font-size: $sizeLargText;
+            display: flex;
+            align-items: center;
+            width: fit-content;
+
+            svg {
+              font-size: $sizeIconsMain;
+              margin-left: 10px;
+            }
+
+            &:hover {
+              border-bottom: 1px solid red;
+              cursor: pointer;
+            }
+
+          }
+
+          p {
+            border: 1px solid $colorSubBlack;
+            color: $colorBlack;
+            font-size: $sizeMainText;
+            padding: 5px;
+          }
+
+          strong {
+            line-height: 25px;
+
+          }
+
+          div {
+            margin-bottom: 10px;
+          }
+
+          .row-table {
+            display: flex;
+            margin-bottom: 10px;
+
+            p {
+              width: 50%;
+              border: 1px solid black;
+              padding: 5px;
+              text-align: center;
+              border-top: none;
+
+              &:last-child {
+                border-right: none;
+              }
+            }
+          }
+        }
+
+
+      }
+    }
+  }
+
+
+
+
+}
+
+@media (max-width:400px) {
+  .detalis-room {
+    zoom: 0.9;
+
+    .row-cild-4 {
+      flex-direction: column;
+
+      .myimg {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

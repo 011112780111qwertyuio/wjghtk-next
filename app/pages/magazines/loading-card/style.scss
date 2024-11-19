@@ -1,0 +1,104 @@
+
+/* Skeleton loader styles */
+.skeleton-loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Animations for skeleton loader */
+@keyframes skeletonPulse {
+  0% {
+    background-color: #e0e0e0;
+  }
+  50% {
+    background-color: #cfcfcf;
+  }
+  100% {
+    background-color: #e0e0e0;
+  }
+}
+
+/* Add skeleton animation effect */
+.skeleton-img,
+.skeleton-title,
+.skeleton-date,
+.skeleton-user,
+.skeleton-comment,
+.skeleton-content,
+.skeleton-read-more,
+.skeleton-arrow {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  animation: skeletonPulse 1.5s infinite ease-in-out;
+  display: block;
+}
+
+/* Skeleton for the image */
+.skeleton-img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Skeleton for the title in the top section */
+.skeleton-title {
+  width: 80%;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+/* Skeleton for the date in the top section */
+.skeleton-date {
+  width: 60%;
+  height: 15px;
+}
+
+/* Skeleton for user info */
+.skeleton-user {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Skeleton for comment count or icon */
+.skeleton-comment {
+  width: 70px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+/* Skeleton for the content section (sub-content) */
+.skeleton-content {
+  width: 100%;
+  height: 15px;
+  margin-bottom: 15px;
+}
+
+/* Skeleton for the "Read More" button */
+.skeleton-read-more {
+  width: 100px;
+  height: 20px;
+  border-radius: 20px;
+}
+
+/* Skeleton for the arrow icon */
+.skeleton-arrow {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+/* Adjusting the layout for the skeleton content */
+.skeleton-loader .content-card .flex {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.skeleton-loader .content-card .flex div:last-child {
+  margin-right: 20px;
+}

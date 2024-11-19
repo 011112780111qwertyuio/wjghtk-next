@@ -1,0 +1,152 @@
+@import '../../../../_styles/options/variables.scss';
+
+
+
+$skeletonColor: #e0e0e0; // Light gray for the skeleton
+$animationDuration: 1.5s;
+
+.skeleton-loader {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  .skeleton-title {
+    height: 24px;
+    width: 60%;
+    background-color: $skeletonColor;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    animation: pulse $animationDuration infinite;
+  }
+
+  .skeleton-text {
+    height: 16px;
+    width: 80%;
+    background-color: $skeletonColor;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    animation: pulse $animationDuration infinite;
+  }
+
+  .skeleton-list {
+    .skeleton-item {
+      height: 20px;
+      width: 100%;
+      background-color: $skeletonColor;
+      border-radius: 4px;
+      margin-bottom: 8px;
+      animation: pulse $animationDuration infinite;
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+.confirmation {
+  a {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  &>span {
+    font-size: $sizeMainText;
+    font-weight: bold;
+  }
+
+  &>p {
+    font-size: $sizeLargText;
+    color: $colorBlack;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  }
+
+  ul {
+    li {
+      line-height: 30px;
+      font-size: $sizeMainText;
+
+      span {
+        font-size: $sizeIconsMain;
+      }
+
+      div {
+        span {
+          margin-left: 5px;
+          font-size: $sizeIconsMain;
+        }
+      }
+
+    }
+
+    .my-row {
+      display: flex;
+      margin-top: 10px;
+
+      .btn {
+        display: flex;
+        padding: 7px;
+        background-color: red;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        border-radius: 5px;
+        color: $colorWhite;
+        font-size: $sizeMainText;
+
+        &:last-child {
+          margin-right: 7px;
+
+        }
+
+        &:hover {
+          cursor: pointer;
+          background-color: $colorPrimary;
+          transition: all 0.3s ease-in-out;
+        }
+
+      }
+    }
+  }
+
+
+}
+
+@media (max-width:475px) {
+  .confirmation {
+    zoom: 0.9;
+  }
+}
+
+@media (max-width:400px) {
+  .confirmation {
+    .my-row {
+      flex-direction: column;
+
+      .btn {
+        width: 100% !important;
+        margin: 0px !important;
+        margin-top: 10px !important;
+      }
+    }
+  }
+}

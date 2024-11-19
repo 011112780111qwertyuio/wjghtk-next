@@ -1,0 +1,60 @@
+@import '../../../../_styles/options/variables.scss';
+
+.child-content {
+  margin-top: 20px;
+
+  &>p {
+    color: $colorBlack;
+    font-size: $sizeLargText;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+  }
+
+  &>span {
+    font-size: $sizeMainText;
+    color: $colorBlack;
+  }
+
+  .child-concat {
+    display: flex;
+    margin-bottom: 20px;
+
+    p,
+    span,
+    a,
+    strong {
+      line-height: 30px;
+
+    }
+
+    &>span {
+      color: $colorBlack;
+      font-size: $sizeIconsMain;
+      padding-left: 10px;
+      padding-right: 5px;
+    }
+
+    &>div {
+      strong {
+        color: $colorBlack;
+        font-size: $sizeMainText;
+        font-weight: bold;
+      }
+
+      span {
+        color: $colorBlack;
+        font-size: $sizeMainText;
+      }
+
+      a {
+        font-size: $sizeMainText;
+        font-weight: bold;
+      }
+    }
+  }
+
+
+
+
+}

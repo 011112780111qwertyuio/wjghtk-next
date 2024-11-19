@@ -1,0 +1,85 @@
+@import '../../../../_styles/options/variables.scss';
+
+.formation-confirmation {
+  background-color: #fef3ec;
+  padding: 20px;
+  border: 1px solid red;
+  margin-top: 25px;
+
+  .item-1 {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: flex-start;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+
+    span {
+      padding: 15px;
+      padding-top: 0px;
+      font-size: $sizeIconsMain;
+      color: $colorBlack;
+
+    }
+
+    div {
+      .row-title {
+        span {
+          font-size: $sizeMainText;
+          color: $colorBlack;
+          padding-right: 3px;
+        }
+
+        strong {
+          font-size: $sizeLargText;
+          color: $colorBlack;
+        }
+      }
+
+      &>p {
+        color: $colorBlack;
+        font-size: $sizeLargText;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+
+      &>span {
+        color: $colorBlack;
+        font-size: $sizeMainText;
+        line-height: 30px;
+
+        strong {
+          font-size: $sizeLargText;
+          color: $colorBlack;
+        }
+      }
+
+      &>a {
+        font-size: $sizeMainText;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 3px;
+
+        &:hover {
+          cursor: pointer;
+          background-color: rgba(0, 0, 0, 0.083);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+
+  }
+}
+
+@media (min-width:400px) and (max-width:450px) {
+  .formation-confirmation {
+    zoom: 0.9;
+  }
+}
+
+@media (min-width:0px) and (max-width:399px) {
+  .formation-confirmation {
+    zoom: 0.8;
+  }
+}

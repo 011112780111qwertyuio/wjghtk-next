@@ -1,0 +1,205 @@
+@import '../../../_styles/options/variables.scss';
+
+.card-magazines {
+  a {
+    text-decoration: none;
+    display: inline-block;
+    word-break: break-all;
+  }
+
+  width: 32%;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: $colorWhite;
+  padding: 20px;
+  margin-bottom: 50px;
+
+  .view-card {
+    width: 100%;
+    height: 300px;
+    position: relative;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+
+    }
+
+    .title-top {
+      position: absolute;
+      left: 35px;
+      top: 5px;
+      background-color: $colorPrimary;
+      padding-left: 15px;
+      padding-right: 15px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      p {
+        color: $colorWhite;
+        font-weight: bold;
+        font-size: $sizeMainText;
+      }
+
+      span {
+        color: $colorWhite;
+        font-size: $sizeSmallText;
+        margin-top: 4px;
+        text-transform: uppercase;
+      }
+
+    }
+
+    .btn-bottom {
+      position: absolute;
+      bottom: -20px;
+      right: 15px;
+      background-color: orange;
+      font-size: $sizeMainText;
+      color: $colorWhite;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 20px;
+      padding-right: 20px;
+      text-transform: capitalize;
+      font-weight: bold;
+    }
+  }
+
+  .content-card {
+    padding-top: 50px;
+    width: 100%;
+
+    .flex {
+      display: flex;
+      justify-content: flex-start;
+
+      div:last-child {
+        margin-right: 20px;
+      }
+
+      div {
+        color: $colorSubBlack;
+        font-size: $sizeSmallText;
+        text-transform: capitalize;
+
+        span {
+          font-size: $sizeIconsSmall;
+          margin-left: 10px;
+          color: $colorPrimary;
+        }
+      }
+    }
+
+    .title {
+      color: $colorBlack;
+      font-size: $sizeLargText;
+      margin-top: 15px;
+      margin-bottom: 10px;
+      word-wrap: break-word;
+
+      &:hover {
+        color: $colorPrimary;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out
+      }
+    }
+
+    .sub-content {
+      font-size: $sizeMainText;
+      color: $colorSubBlack;
+      line-height: 25px;
+      word-wrap: break-word;
+    }
+
+    .flex-get {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      width: fit-content;
+      justify-content: center;
+
+      &:hover {
+
+        p,
+        a,
+        span {
+          cursor: pointer;
+          color: $colorPrimary;
+          transition: all 0.3s ease-in-out;
+          letter-spacing: 2px;
+          display: inline;
+        }
+      }
+
+      p,
+      a {
+        font-size: $sizeMainText;
+        color: $colorSubBlack;
+        text-transform: capitalize;
+      }
+
+      span {
+        font-size: $sizeIconsSmall;
+        margin-right: 10px;
+
+      }
+    }
+
+  }
+}
+
+@media (max-width:1300px) {
+  .content {
+    width: 100%
+  }
+}
+
+@media(min-width:1151px) and (max-width:1125px) {
+  .card-magazines {
+    zoom: 0.9;
+  }
+}
+
+@media(min-width:951px) and (max-width:1150px) {
+  .card-magazines {
+    width: 48%;
+  }
+}
+
+@media(min-width:650px) and (max-width:950px) {
+  .card-magazines {
+    width: 48%;
+    zoom: 0.8;
+  }
+}
+
+@media(min-width:500px) and (max-width:649px) {
+  .card-magazines {
+    width: 100%;
+  }
+}
+
+@media(min-width:379px) and (max-width:499px) {
+  .card-magazines {
+    width: 100%;
+    zoom: 0.9;
+  }
+}
+
+@media(min-width:1px) and (max-width:378px) {
+  .card-magazines {
+    width: 100%;
+    zoom: 0.8;
+  }
+}

@@ -1,0 +1,9 @@
+@import '../../_styles/options/variables.scss';
+
+.magazines {
+  .flex-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

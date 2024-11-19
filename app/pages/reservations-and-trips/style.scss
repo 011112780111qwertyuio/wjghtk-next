@@ -1,0 +1,337 @@
+@import '../../_styles/options/variables.scss';
+
+.reservations-trips {
+a{
+  text-decoration: none;
+}
+  .view-not-found-travel {
+    border: 1px solid $colorSubBlack;
+    padding: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 15px;
+    border-radius: 10px;
+
+    .column-center {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 150px;
+        height: 150px;
+        max-width: 100%;
+
+      }
+
+      p {
+        font-size: $sizeLargText;
+        font-weight: bold;
+        color: $colorBlack;
+        text-align: center;
+      }
+
+      span {
+        font-size: $sizeMainText;
+        color: $colorSubBlack;
+        text-align: center;
+        line-height: 25px;
+
+      }
+    }
+  }
+
+  .flex-tile {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    a {
+      text-decoration: none;
+      font-size: $sizeMainText;
+      color: red;
+      padding: 10px;
+      border-radius: 5px;
+      transition: all 0.1s ease-in-out;
+      width: fit-content;
+
+      &:hover {
+        cursor: pointer;
+        background-color: rgba(180, 179, 181, 0.255);
+
+      }
+    }
+
+    p {
+      font-size: $sizeLargText;
+      color: $colorBlack;
+      font-weight: bold;
+    }
+  }
+
+  .all-items {
+    .mycard {
+      margin-bottom: 50px;
+
+      .view-image {
+        width: 100%;
+        height: 250px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 15px;
+        padding-bottom: 20px;
+
+        .title-alboum {
+          color: $colorWhite;
+          font-size: $sizeLargText;
+          font-weight: bold;
+        }
+
+        .subtile-albom {
+          color: $colorWhite;
+          font-size: $sizeMainText;
+          margin-top: 14px;
+          letter-spacing: 1px;
+          font-weight: bold;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        img {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0px;
+          right: 0px;
+          top: 0px;
+          bottom: 0px;
+          z-index: -1;
+
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0px;
+          bottom: 0px;
+          top: 0px;
+          right: 0px;
+          background-color: rgba(22, 2, 2, 0.365);
+          z-index: -1;
+        }
+      }
+
+      .view-content {
+        box-shadow: 0 2px 8px 0 rgba(26, 26, 26, 0.16);
+
+        .flex-content {
+          margin-top: 20px;
+          display: flex;
+          justify-content: space-between;
+          padding: 30px;
+          margin-top: 30px;
+          border-radius: 10px;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          .left {
+            display: flex;
+
+            .sub-menue {
+              position: relative;
+
+              .pop {
+                box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                position: absolute;
+                top: 50px;
+                min-width: 280px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                background-color: white;
+                z-index: 3000;
+
+                p {
+                  padding: 15px;
+
+                  &:hover {
+                    background-color: rgba(0, 0, 0, 0.053);
+
+                  }
+                }
+
+              }
+
+              svg {
+                color: $colorBlack;
+                font-size: $sizeIconsMain;
+                margin-right: 35px;
+                margin-top: 5px;
+              }
+            }
+
+            &>p {
+              font-size: $sizeLargText;
+              color: $colorBlack;
+
+            }
+          }
+
+          .right {
+            .child {
+              display: flex;
+
+              .left-child {
+                .title {
+                  font-size: $sizeMainText;
+                  font-weight: bold;
+                  color: $colorBlack;
+                }
+
+                .sub-tile {
+                  color: $colorSubBlack;
+                  font-size: $sizeSmallText;
+                  margin-top: 12px;
+                }
+
+                .sub-active {
+                  margin-top: 10px;
+                  margin-bottom: 4px;
+                  color: olivedrab;
+                  font-size: $sizeSmallText;
+                }
+              }
+
+              .right-child {
+                padding-left: 25px;
+
+                img {
+                  width: 90px;
+                  height: 90px;
+                  border-radius: 10px;
+                }
+              }
+            }
+          }
+
+        }
+
+        .child-column {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-left: 35px;
+          padding-right: 35px;
+          padding-top: 18px;
+          padding-bottom: 18px;
+          border-top: 1px solid rgb(199, 197, 197);
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          .child-column-right {
+            display: flex;
+
+            span {
+              margin-left: 30px;
+              font-size: $sizeIconsMain;
+              color: $colorBlack;
+            }
+
+            p {
+              font-size: $sizeMainText;
+              color: $colorSubBlack;
+            }
+          }
+        }
+      }
+
+
+    }
+  }
+}
+
+
+
+@media (max-width:1020px) {
+  .reservations-trips {
+    .all-items {
+      .mycard {
+        .view-content {
+          .flex-content {
+            .left {
+              &>p {
+                display: none;
+              }
+
+              .sub-menue {
+                .pop {
+                  width: 240px;
+
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+
+  }
+}
+
+@media (max-width:711px) {
+  .reservations-trips {
+    .flex-tile {
+      flex-direction: column;
+
+      a {
+        text-align: left;
+
+      }
+
+      p {
+        text-align: right;
+        margin-top: 10px;
+      }
+    }
+
+    .all-items {
+      .mycard {
+        .view-image {
+          justify-content: flex-end;
+          align-items: flex-end;
+        }
+      }
+    }
+
+
+  }
+}
+
+@media (min-width:280px) and (max-width:500px) {
+  .reservations-trips {
+    zoom: 0.8;
+  }
+}
