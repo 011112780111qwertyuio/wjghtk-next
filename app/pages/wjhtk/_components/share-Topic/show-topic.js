@@ -3,11 +3,11 @@ import axios from "axios";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComment } from '@fortawesome/free-solid-svg-icons';
 import Link from "next/link";
-const ShowToicp = async ({ local }) => {
+const ShowToicp = ({ local }) => {
   let isloading = true;
   let data = [];
   const url = local + "/" + process.env.API_SHOWTOPICRECENRPOSTS;
-  await axios.post(url).then(async (res) => {
+  axios.post(url).then(async (res) => {
     if (res?.data?.state === "ok-auth") {
       data = await res?.data?.mydata;
     }
@@ -28,7 +28,6 @@ const ShowToicp = async ({ local }) => {
 
   isloading = false;
 
-
   return (
     <div className='Recent-Posts'>
       <div className='top'>
@@ -38,13 +37,13 @@ const ShowToicp = async ({ local }) => {
         {data?.map((item, index) => (
           <div key={index} className='card'>
             <div className='l-card'>
-              <Link href={`/pages/wjhtk/magazines/wjhtk/${item?.title_Topics}/${item?.ID_Topics}`}>
+              <Link href={`/pages/wjhtk?title?=&${item?.title_Topics}&uid=${item?.ID_Topics}`}>
                 <img src={`${local + "/" + process.env.API_PATHIMAGES + "/" + item?.avatar_Prim}`} alt="f" />
               </Link>
             </div>
             <div className='r-card'>
               <p className='tile'><FontAwesomeIcon icon={faComment} />{countComment(item.ID_Topics)} تعليقات</p>
-              <p className='des'><Link href={`/pages/wjhtk/magazines/wjhtk/${item?.title_Topics}/${item?.ID_Topics}`}>{item?.title_Topics.length > 80 ? item?.title_Topics + ".." : item?.title_Topics}</Link></p>
+              <p className='des'><Link href={`/pages/wjhtk?title?=&${item?.title_Topics}&uid=${item?.ID_Topics}`}>{item?.title_Topics.length > 80 ? item?.title_Topics + ".." : item?.title_Topics}</Link></p>
             </div>
           </div>
 
