@@ -1,0 +1,88 @@
+@import '../../_styles/options/variables.scss';
+
+.section-home {
+  min-height: 400px;
+  max-height: 400px;
+  height: 400px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 70px;
+
+  .section-image {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+
+    }
+
+    &::after {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      content: "";
+      background-color: rgba(0, 0, 0, 0.365);
+    }
+  }
+
+  .content {
+    height: 100%;
+
+    .content-section {
+      z-index: 3000;
+      width: 100%;
+      height: 100%;
+
+      .ditls {
+        z-index: 1000;
+        height: 81%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .my-table {
+        height: 19%;
+      }
+
+      .title {
+        color: $colorWhite;
+        font-size: $sizeTextAlboum;
+        font-weight: bold;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+      }
+
+      .sub-title {
+        font-size: $sizeLargText;
+        color: $colorWhite;
+
+      }
+
+    }
+  }
+}
+
+@media (max-width:550px) {
+  .section-home {
+    min-height: 350px;
+    max-height: 350px;
+    height: 350px;
+
+    .content-section {
+      .ditls {
+        zoom: 0.8;
+      }
+    }
+  }
+}

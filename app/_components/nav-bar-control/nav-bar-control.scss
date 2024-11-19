@@ -1,0 +1,226 @@
+@import '../../_styles/options/variables.scss';
+
+.hide {
+  display: none !important;
+}
+
+.nav-control {
+  .padding-load {
+    margin-right: 5px;
+  }
+
+  .floag {
+    width: 28px;
+    height: 28px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+
+  background-color: $colorPrimary;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 24px;
+  padding-bottom: 20px;
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .flex-left {
+      a {
+        text-decoration: none;
+        color: $colorWhite;
+        font-size: $sizeMainText;
+        margin-left: 15px;
+      }
+
+      .face,
+      .in,
+      .g {
+        font-weight: bold;
+        text-transform: capitalize;
+      }
+    }
+
+    .flex-right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .btn {
+        margin-right: 30px;
+        display: inline-block;
+        position: relative;
+
+        a {
+          display: inline-block;
+        }
+
+        &:hover {
+          cursor: pointer;
+
+        }
+
+        .abos {
+          position: absolute;
+          width: fit-content;
+          background-color: $colorPrimary;
+          font-size: $sizeSmallText;
+          color: $colorWhite;
+          top: -13px;
+          left: 4px;
+          background-color: black;
+          border-radius: 4px;
+          padding-bottom: 3px;
+          padding-left: 3px;
+          padding-right: 3px;
+
+        }
+
+        a,
+        span,
+        label {
+          text-decoration: none;
+          color: $colorWhite;
+          font-size: $sizeMainText;
+          text-transform: capitalize;
+
+          &:hover {
+            cursor: pointer;
+
+          }
+
+          svg {
+
+            padding-right: 5px;
+            padding-left: 5px;
+
+            color: $colorWhite;
+            font-size: $sizeIconsSmall;
+          }
+        }
+
+
+        .sub-menue-usd {
+          position: absolute;
+          background-color: $colorPrimary;
+          left: 0px;
+          top: 42px;
+          z-index: 1200;
+          width: 90px;
+          height: 100px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          div {
+
+            width: 100%;
+            color: $colorWhite;
+            font-size: $sizeMainText;
+            text-transform: capitalize;
+            display: flex;
+            flex-direction: column;
+            padding-right: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 40px;
+
+            &:hover {
+              cursor: pointer;
+            }
+
+          }
+
+
+
+
+
+        }
+
+
+        .sub-menue-lang,
+        .sub-menue-user {
+          position: absolute;
+          background-color: $colorPrimary;
+          top: 42px;
+          left: -100px;
+          min-width: 230px;
+          z-index: 1200;
+          padding-top: 10px;
+          padding-bottom: 10px;
+
+          ul {
+            list-style-type: none;
+          }
+
+          ul li {
+            font-size: $sizeMainText;
+            padding: 10px;
+
+            a,
+            p {
+              display: inline-block;
+              width: 100%;
+              font-size: $sizeMainText;
+              color: $colorWhite;
+              text-transform: capitalize;
+              padding-right: 15px;
+
+              span {
+                margin-left: 8px;
+                font-size: $sizeIconsSmall;
+
+
+              }
+            }
+          }
+        }
+
+        .sub-menue-user {
+          left: 1px;
+        }
+
+
+      }
+
+      .bt-img {
+        &>a {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+
+          img {
+            display: inline-block;
+            height: 14px;
+            width: 23px;
+            margin-left: 5px;
+          }
+        }
+
+
+      }
+
+
+
+    }
+  }
+}
+
+@media(max-width:1000px) {
+  .nav-control {
+    display: none;
+
+  }
+
+
+}

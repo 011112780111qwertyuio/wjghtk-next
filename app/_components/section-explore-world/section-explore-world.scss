@@ -1,0 +1,230 @@
+@import '../../_styles/options/variables.scss';
+
+.section-explore-world {
+  margin-top: 40px;
+  text-decoration: none !important;
+
+  .flex {
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .bt {
+        display: block;
+        text-align: center;
+        font-size: $sizeMainText;
+        color: $colorPrimary;
+        background-color: rgb(237, 215, 215);
+        width: 170px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+
+      }
+
+      .title {
+        color: $colorBlack;
+        font-size: $sizeLargText;
+        font-weight: bold;
+        margin-top: 35px;
+      }
+
+    }
+
+    .flex-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 40px;
+
+      .card {
+        width: 31%;
+        border-radius: 5px;
+        margin-bottom: 40px;
+
+        &:hover {
+          cursor: pointer;
+
+          .btn {
+            background-color: $colorPrimary !important;
+            transition: all 0.3s ease;
+          }
+        }
+
+        .view {
+          position: relative;
+          width: 100%;
+          height: 260px;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            height: 100%;
+
+          }
+
+          p {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: $colorPrimary;
+            color: white;
+            font-size: $sizeMainText;
+            width: 100px;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+          }
+        }
+
+        .flex-content {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          padding-top: 30px;
+          padding-left: 15px;
+          padding-right: 15px;
+          padding-bottom: 30px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+          .left {
+            .sub-tile {
+              color: $colorSubBlack;
+              font-size: $sizeMainText;
+              text-transform: capitalize;
+
+            }
+
+            .title {
+              color: $colorBlack;
+              font-size: $sizeLargText;
+              font-weight: bold;
+              margin-top: 10px;
+            }
+          }
+
+          .right {
+            .btn {
+              width: 40px;
+              height: 40px;
+              background-color: orange;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              span {
+                color: $colorWhite;
+                font-size: $sizeIconsSmall;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width:319px) {
+  .section-explore-world {
+    zoom: 0.8;
+
+    .flex {
+      .flex-cards {
+        .card {
+          width: 100%;
+
+          .view {
+            height: 230px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:320px) and (max-width:389px) {
+  .section-explore-world {
+    zoom: 0.9;
+
+    .flex {
+      .flex-cards {
+        .card {
+          width: 100%;
+
+          .view {
+            height: 230px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:390px) and (max-width:651px) {
+  .section-explore-world {
+    .flex {
+      .flex-cards {
+        .card {
+          width: 100%;
+
+          .view {
+            height: 300px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:652px) and (max-width:739px) {
+  .section-explore-world {
+    .flex {
+      .flex-cards {
+        zoom: 0.9;
+
+        .card {
+          width: 48%;
+
+          .view {
+            height: 280px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:740px) and (max-width:1039px) {
+  .section-explore-world {
+    .flex {
+      .flex-cards {
+        .card {
+          width: 48%;
+
+          .view {
+            height: 280px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:948px) and (max-width:1040px) {
+  .section-explore-world {
+    .flex {
+      .flex-cards {
+        zoom: 0.9;
+      }
+    }
+  }
+}

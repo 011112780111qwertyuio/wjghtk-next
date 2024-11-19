@@ -1,0 +1,22 @@
+@import '../../_styles/options/variables.scss';
+
+.review-start {
+  display: flex;
+
+  &>p {
+    font-size: $sizeMainText;
+    color: $colorSubBlack;
+    word-spacing: 10px;
+  }
+
+  .stars {
+    input[type=radio] {
+      display: none;
+    }
+
+    .star {
+      padding: 3px;
+      font-size: $sizeIconsSmall;
+    }
+  }
+}

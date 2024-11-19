@@ -1,0 +1,135 @@
+@import '../../_styles/options/variables.scss';
+
+.read-the-latest-from-blog {
+  padding-top: 30px;
+
+  .title {
+    color: $colorBlack;
+    font-size: $sizeLargText;
+
+  }
+
+  .sub-title {
+    color: $colorSubBlack;
+    font-size: $sizeSmallText;
+    margin-top: 10px;
+  }
+
+  .flex-cards {
+    padding-top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .card {
+      width: 32%;
+
+      margin-top: 50px;
+
+      .view {
+        height: 250px;
+        width:100%;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+
+          &:hover {
+            transform: scale(1.1);
+            transition: all 0.3s ease-in-out;
+          }
+        }
+      }
+
+      .content-card {
+
+        .flex-title {
+          display: flex;
+          justify-content: space-between;
+          width: 90%;
+          padding-top: 15px;
+
+          p {
+            color: $colorBlack;
+            font-size: $sizeSmallText;
+            text-transform: uppercase;
+
+          }
+
+          span {
+            font-size: $sizeSmallText;
+            color: $colorSubBlack;
+          }
+
+        }
+
+        .title-ditels {
+          color: $colorBlack;
+          font-size: $sizeMainText;
+          font-weight: bold;
+          padding-top: 5px;
+          padding-bottom: 10px;
+        }
+
+        .ditels {
+          color: $colorSubBlack;
+          font-size: $sizeMainText;
+        }
+
+        .red-more {
+          color: $colorBlack;
+          font-size: $sizeMainText;
+          font-weight: bold;
+          padding-top: 15px;
+          padding-bottom: 7px;
+          border-bottom: 4px solid $colorPrimary;
+          width: fit-content;
+        }
+
+
+
+      }
+
+
+
+    }
+  }
+}
+
+
+
+@media (min-width:200px) and (max-width:399px) {
+  .read-the-latest-from-blog {
+    .flex-cards {
+      .card {
+        width: 100%;
+        zoom: 0.8;
+      }
+    }
+  }
+}
+
+
+@media (min-width:400px) and (max-width:679px) {
+  .read-the-latest-from-blog {
+    .flex-cards {
+      .card {
+        width: 98%;
+      }
+    }
+  }
+}
+
+
+@media (min-width:680px) and (max-width:863px) {
+  .read-the-latest-from-blog {
+    .flex-cards {
+      .card {
+        width: 48%;
+      }
+    }
+  }
+}

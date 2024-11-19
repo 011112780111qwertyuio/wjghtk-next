@@ -1,0 +1,81 @@
+@import '../../_styles/options/variables.scss';
+
+.section-date-time-price {
+  padding-top: 60px;
+  padding-bottom: 70px;
+
+  .title-price {
+    color: $colorBlack;
+    font-size: $sizeLargText;
+    font-weight: bold;
+
+  }
+
+  .form-date {
+    padding-top: 20px;
+
+    .nav {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+
+      &>div {
+        margin-bottom: 10px;
+        width: 20%;
+        height: 50px;
+        border-radius: 10px;
+        color: $colorBlack;
+        font-size: $sizeMainText;
+        font-weight: bold;
+        background-color: #F3F8F6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: capitalize;
+        margin-right: 5px;
+
+        &>:last-child {
+          margin-right: 0px;
+        }
+      }
+
+    }
+
+    .flex-between {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #313041;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 15px;
+      padding-right: 15px;
+
+      span {
+        color: $colorWhite;
+        font-size: $sizeIconsMain;
+      }
+
+      p {
+        color: $colorWhite;
+        font-size: $sizeMainText;
+      }
+
+    }
+
+    .flex-btns {
+      width: 100%;
+      background-color: #F3F8F6;
+      height: 250px;
+      border: 1px solid black;
+      border-top: none;
+    }
+
+
+
+  }
+
+
+
+}

@@ -1,0 +1,78 @@
+@import '../../_styles/options/variables.scss';
+
+.section-alboum-main {
+  position: relative;
+  height: 350px;
+
+  img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+
+
+  }
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.408);
+    z-index: 1;
+  }
+
+  .flex {
+    z-index: 999;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+
+    p {
+      color: $colorWhite;
+      font-size: $sizeTextAlboum;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .flexx {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      a,
+      span {
+        color: rgb(242, 239, 239);
+        font-size: $sizeLargText;
+        text-transform: capitalize;
+        text-decoration: none;
+
+      }
+
+      span {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+
+    }
+  }
+}
+
+
+@media (max-width:500px) {
+  .section-alboum-main {
+    zoom: 0.8;
+  }
+}

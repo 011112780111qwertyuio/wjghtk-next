@@ -1,0 +1,324 @@
+@import '../../_styles/options/variables.scss';
+
+.section-boat-listing {
+  padding-top: 40px;
+  .title {
+    color: $colorBlack;
+    font-size: $sizeLargText;
+  }
+
+  .sub-title {
+    color: $colorSubBlack;
+    font-size: $sizeSmallText;
+    word-spacing: 2px;
+    margin-top: 6px;
+  }
+
+  .flex-card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .mycard {
+      width: 23%;
+      zoom: 0.9;
+
+      margin-top: 20px;
+margin-bottom: 20px;
+      .mycard-view {
+        position: relative;
+        overflow: hidden;
+        height: 230px;
+
+        &:hover {
+          cursor: pointer;
+
+          img {
+            transition: all 0.3s ease-in-out;
+            transform: scale(1.1);
+          }
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+
+        }
+
+        .abso-top {
+          position: absolute;
+          top: 0px;
+          display: flex;
+          justify-content: space-between;
+          left: 0px;
+          right: 0px;
+          width: 100%;
+          padding-right: 15px;
+          padding-top: 25px;
+
+          span {
+            color: $colorWhite;
+            font-size: $sizeIconsSmall;
+
+            &:hover {
+              color: $colorSubRed;
+            }
+
+          }
+
+          p {
+            background-color: $colorSubRed;
+            color: $colorWhite;
+            font-size: $sizeMainText;
+            padding-top: 7px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 20px;
+            height: 200px;
+            width: 180px;
+            clip-path: polygon(23% 0, 49% 0, 59% 18%, 0 18%, 0 0);
+
+          }
+        }
+
+        .abso-bottom {
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+          right: 0px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          background-color: rgba(0, 0, 0, 0.099);
+          padding-left: 15px;
+
+          a {
+            text-decoration: line-through;
+            color: $colorWhite;
+            font-size: $sizeSmallText;
+          }
+
+          p {
+            color: $colorWhite;
+            font-size: $sizeLargText;
+            display: inline-block;
+          }
+
+          span {
+            color: $colorWhite;
+            font-size: $sizeSmallText;
+            margin-left: 10px;
+          }
+        }
+
+
+      }
+
+      .bottom-card {
+
+        border: 1px solid rgb(184, 182, 182);
+        border-top: none;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        .content-card {
+          position: relative;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+
+          .left-content {
+            width: 99%;
+            padding-top: 20px;
+
+            .tile {
+              color: $colorBlack;
+              font-size: $sizeMainText;
+              word-spacing: 5px;
+              letter-spacing: 1px;
+              margin-bottom: 10px;
+            }
+
+            .flex-views {
+              display: flex;
+
+              p {
+                color: $colorPrimary;
+                font-size: $sizeSmallText;
+                margin-right: 40px;
+              }
+
+              span {
+                color: $colorSubBlack;
+                font-size: $sizeSmallText;
+              }
+            }
+          }
+
+          .right-content {
+            width: 1%;
+            position: relative;
+
+            p {
+              background-color: $colorPrimary;
+              color: $colorWhite;
+              font-size: $sizeMainText;
+              display: block;
+              text-align: center;
+              width: 50px;
+              height: 50px;
+              border-radius: 70px;
+              border: 3px solid $colorWhite;
+              position: absolute;
+              text-align: center;
+              padding-top: 10px;
+              top: -25px;
+              right: 10px;
+            }
+          }
+        }
+
+        .content-viewo {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 15px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          border-top: 1px solid $colorSubBlack;
+
+          &>div {
+            display: flex;
+            width: 25%;
+
+            p {
+              font-size: $sizeSmallText;
+              color: $colorSubBlack;
+            }
+
+            span {
+              margin-right: 10px;
+
+              svg {
+                color: $colorSubBlack;
+                font-size: $sizeIconsSmall;
+              }
+            }
+          }
+
+          &>div:last-child {
+            justify-content: flex-end;
+          }
+        }
+      }
+
+
+
+
+    }
+  }
+
+
+}
+
+
+
+@media (min-width:0px) and (max-width:349px) {
+
+  .section-boat-listing {
+    .flex-card {
+      .mycard {
+        width: 100%;
+        zoom: 0.7;
+
+        .mycard-view {
+          height: 230px;
+        }
+      }
+    }
+  }
+
+
+}
+
+
+@media (min-width:350px) and (max-width:409px) {
+
+  .section-boat-listing {
+    .flex-card {
+      .mycard {
+        width: 100%;
+        zoom: 0.8;
+
+        .mycard-view {
+          height: 230px;
+        }
+      }
+    }
+  }
+
+
+}
+
+@media (min-width:410px) and (max-width:499px) {
+
+  .section-boat-listing {
+    .flex-card {
+      .mycard {
+        width: 100%;
+
+        .mycard-view {
+          height: 270px;
+        }
+      }
+    }
+  }
+
+
+}
+
+@media (min-width:500px) and (max-width:679px) {
+
+  .section-boat-listing {
+    .flex-card {
+      .mycard {
+        width: 100%;
+
+        .mycard-view {
+          height: 280px;
+        }
+      }
+    }
+  }
+
+
+}
+
+@media (min-width:680px) and (max-width:968px) {
+
+  .section-boat-listing {
+    .flex-card {
+      .mycard {
+        width: 48%;
+      }
+    }
+  }
+
+
+}
+
+@media (min-width:969px) and (max-width:1114px) {
+
+  .section-boat-listing {
+    .flex-card {
+      .mycard {
+        width: 48%;
+        .mycard-view{
+          height:280px;
+        }
+      }
+    }
+  }
+
+
+}

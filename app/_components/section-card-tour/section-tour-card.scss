@@ -1,0 +1,203 @@
+@import '../../_styles/options/variables.scss';
+
+
+.section-tour-card {
+  .not-found {
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+    p {
+      font-size: $sizeLargText;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    span {
+      font-size: $sizeMainText;
+      color: $colorSubBlack;
+
+    }
+  }
+
+
+
+
+  .nav-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .left {
+      display: flex;
+
+      p {
+        font-size: $sizeMainText;
+        color: $colorSubBlack;
+      }
+
+      span {
+        font-weight: bold;
+        color: $colorBlack;
+        margin-left: 20px;
+
+      }
+    }
+
+    .flex-right {
+      display: flex;
+      align-items: center;
+
+      .flex {
+        display: flex;
+        margin-left: 20px;
+
+        p {
+          color: $colorSubBlack;
+          font-size: $sizeSmallText;
+          margin-left: 15px;
+        }
+
+        span {
+          color: $colorSubBlack;
+          font-size: $sizeIconsMain;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+
+      .menue-pop {
+
+        select {
+          border: 1px solid rgb(197, 190, 190);
+          width: 170px;
+          height: 40px;
+          border-radius: 5px;
+          color: $colorSubBlack;
+          font-size: $sizeMainText;
+          outline: none;
+
+        }
+
+
+        .flex-tile {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          p {
+            color: $colorSubBlack;
+            font-size: $sizeMainText;
+
+          }
+
+          span {
+            color: $colorSubBlack;
+            font-size: $sizeIconsSmall;
+          }
+        }
+
+
+
+
+      }
+
+
+    }
+
+  }
+
+  .flex-cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+
+  }
+
+  
+
+}
+
+@media (max-width:1000px) {
+  .section-tour-card {
+    margin-top: 350px;
+  }
+}
+
+@media(max-width:1300px) {
+  .section-tour-card {
+    .content {
+      width: 100%;
+
+      .flex-cards {
+        zoom: 0.9;
+      }
+    }
+  }
+}
+
+@media (min-width:31px) and (max-width:350px) {
+  .section-tour-card {
+
+    .content {
+
+
+
+      width: 100%;
+
+      .flex-cards {
+        width: 100%;
+        align-items: center;
+
+        .mycard {
+          width: 100%;
+          zoom: 0.8;
+
+          .myimg {
+            height: 250px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(min-width:3px) and (max-width:490px) {
+  .section-tour-card {
+
+
+    .nav-title {
+      zoom: 0.9;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+
+      .left {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+
+      .flex-right {
+        width: 100%;
+        justify-content: flex-end;
+
+        .flex {
+          flex-direction: column;
+          margin: 0px;
+          span{
+            margin-top:5px;
+          }
+        }
+      }
+
+
+    }
+  }
+}
