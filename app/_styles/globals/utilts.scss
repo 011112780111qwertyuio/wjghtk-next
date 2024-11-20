@@ -11,13 +11,31 @@ body,
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-}
 
+
+
+
+
+}
 .head {
   width: 100%;
 
 
 }
+
+/* إلغاء التظليل أو التأثير عند الضغط */
+button, a {
+  -webkit-tap-highlight-color: transparent;  /* إزالة التأثير الذي يظهر عند اللمس في المتصفحات التي تعتمد على WebKit */
+  touch-action: manipulation;  /* إلغاء بعض التأثيرات غير الضرورية عند اللمس */
+}
+
+button:active, a:active {
+  outline: none;
+  box-shadow: none;
+  background: none; /* تعطيل أي تغييرات في اللون أو التأثير عند الضغط */
+}
+
+
 
 .content {
   width: 1300px;
