@@ -3,11 +3,11 @@ import axios from "axios";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComment } from '@fortawesome/free-solid-svg-icons';
 import Link from "next/link";
-const ShowToicp = async({ local }) => {
+const ShowToicp = async ({ local }) => {
   let isloading = true;
   let data = [];
-  const url = local + "/" + process.env.API_SHOWTOPICRECENRPOSTS;
-await axios.post(url).then(async (res) => {
+  let url =await local+"/"+process.env.API_SHOWTOPICRECENRPOSTS;
+  await axios.post(url).then(async (res) => {
     if (res?.data?.state === "ok-auth") {
       data = await res?.data?.mydata;
     }
@@ -15,6 +15,7 @@ await axios.post(url).then(async (res) => {
       data = [];
     }
   })
+
   const countComment = async (id) => {
     let count = 0;
     const url_2 = local + "/" + process.env.API_COUNTCOMMENTTOPIC;
@@ -24,7 +25,7 @@ await axios.post(url).then(async (res) => {
       count = await res?.data?.data.length > 100 ? 100 + "+" : res?.data?.data.length;
     })
     return " " + count + " ";
-  }
+  } 
 
   isloading = false;
 
@@ -52,6 +53,6 @@ await axios.post(url).then(async (res) => {
       </div>
     </div>
   );
-
+        
 }
 export default ShowToicp;
