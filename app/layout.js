@@ -1,3 +1,4 @@
+
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import { GoogleOAuthProvider } from '@react-oauth/google';
@@ -23,7 +24,12 @@ export const metadata = {
     description: "اكتشف العروض السياحية المميزة في مصر مع WJHTK.COM، بما في ذلك الأهرامات، الأقصر، البحر الأحمر، وأسوان. احجز رحلتك الآن!",
     image: "https://wjhtk.com/images/main-banner.jpg", // رابط الصورة الرئيسية للصفحة
   },
+  viewport: "width=device-width,initial-scale=1,maximum-scale=2,shrink-to-fit=no",
+
 };
+
+
+
 export default function RootLayout(
   {
     children,
@@ -31,17 +37,14 @@ export default function RootLayout(
   }
 ) {
 
-
-
-
-
-
-
-
-
   return (
     <html lang="ar">
+      <head>
+        {/* إضافة meta viewport داخل head */}
+        <meta name="viewport" content={metadata.viewport} />
+      </head>
       <body suppressHydrationWarning={true} className={roboto.className}>
+
         <GoogleOAuthProvider clientId="385206976159-f6hipust822aocahncnq25a8nr6tvh1j.apps.googleusercontent.com">
           <Provider>
             <div>
@@ -50,6 +53,7 @@ export default function RootLayout(
           </Provider>
         </GoogleOAuthProvider>
       </body>
+
     </html>
   );
 }
