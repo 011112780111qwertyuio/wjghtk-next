@@ -13,7 +13,7 @@ export const counterSlice = createSlice({
   name: 'counter',
   initialState: {
     nameLocal: "https://wjhtk.rf.gd",
-    name_Local_FrontEnd: "https://wjghtk-next-git-main-ahmedpahr9gmailcoms-projects.vercel.app",
+    name_Local_FrontEnd: "https://wjghtk-permds-git-main-ahmedpahr9gmailcoms-projects.vercel.app",
     value: 0,
     CountryData: null, // Initialize as null
 
