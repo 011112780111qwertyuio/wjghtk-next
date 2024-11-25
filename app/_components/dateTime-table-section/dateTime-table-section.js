@@ -5,6 +5,7 @@ import axios from "axios";
 import { useSelector } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import LoadingBtn from "../loading-btn/loading-btn";
 function DateTimeTableSection({ funtoggle, funSaveDt, dtpush }) {
   const myvalue = useSelector((state) => state.counter);
   const [isloading, setloading] = useState(true);
@@ -124,6 +125,36 @@ function DateTimeTableSection({ funtoggle, funSaveDt, dtpush }) {
   }
 
 
+  /* ---------------------------- */
+  const [startX, setStartX] = useState(0);
+  // Handling swipe events
+  const handleTouchStart = (e) => {
+    const touchStart = e.touches[0].clientX; // Get starting touch position
+    setStartX(touchStart);
+  }
+  const handleTouchEnd = (e) => {
+    const touchEnd = e.changedTouches[0].clientX; // Get ending touch position
+    const distance = touchEnd - startX; // Calculate distance moved
+
+    if (distance > 50) {
+      // Swipe right
+      funButton("left");
+    } else if (distance < -50) {
+      // Swipe left
+      funButton("right");
+    }
+  }
+
+  // Fetch data for the selected date
+
+
+
+
+
+
+
+
+
 
   return (
 
@@ -136,9 +167,11 @@ function DateTimeTableSection({ funtoggle, funSaveDt, dtpush }) {
             <p>{formation.monthAr[month] + " " + year}</p>
             <span onClick={() => { funButton("right") }}><FontAwesomeIcon icon={faAngleLeft} /></span>
           </div>
-          <div className="my-table">
+          <div onTouchEnd={handleTouchEnd} onTouchStart={handleTouchStart}  className="my-table">
             {isloading &&
-              <div className="loading">   </div>
+              <div className="loading"> 
+              <LoadingBtn />
+                </div>
             }
             <table>
               <thead>
