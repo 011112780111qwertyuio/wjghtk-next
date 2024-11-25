@@ -4,14 +4,14 @@ import axios from 'axios';
 export const fetchCountryData = createAsyncThunk(
   'counter/fetchCountryData',
   async () => {
-    const response = await axios.post(`https://1ee7-197-59-112-133.ngrok-free.app/api-server/${process.env.NEXT_PUBLIC_API_KEY_REVEALINGTHENAMEOFTHECOUNTRY}`);
+    const response = await axios.post(`https://wjhtk.rf.gd/${process.env.NEXT_PUBLIC_API_KEY_REVEALINGTHENAMEOFTHECOUNTRY}`);
     return response.data;
   }
 );
 export const counterSlice = createSlice({
   name: 'counter',
   initialState: {
-    nameLocal: "https://1ee7-197-59-112-133.ngrok-free.app/api-server",
+    nameLocal: "https://wjhtk.rf.gd",
     name_Local_FrontEnd: "https://wjghtk-next-git-main-ahmedpahr9gmailcoms-projects.vercel.app",
     value: 0,
     CountryData: null, // Initialize as null
