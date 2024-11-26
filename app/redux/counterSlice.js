@@ -5,14 +5,14 @@ import axios from 'axios';
 export const fetchCountryData = createAsyncThunk(
   'counter/fetchCountryData',
   async () => {
-    const response = await axios.post(`https://api.allorigins.win/get?url=https://wjhtk.rf.gd/${process.env.NEXT_PUBLIC_API_KEY_REVEALINGTHENAMEOFTHECOUNTRY}`);
+    const response = await axios.post(`https://wjhtk.rf.gd/${process.env.NEXT_PUBLIC_API_KEY_REVEALINGTHENAMEOFTHECOUNTRY}`);
     return response.data;
   }
 );
 export const counterSlice = createSlice({
   name: 'counter',
   initialState: {
-    nameLocal: " https://api.allorigins.win/get?url=https://wjhtk.rf.gd",
+    nameLocal: "https://wjhtk.rf.gd",
     name_Local_FrontEnd: "https://wjghtk-next.vercel.app",
     value: 0,
     CountryData: null, // Initialize as null
